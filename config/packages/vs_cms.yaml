@@ -1,0 +1,9 @@
+vs_cms:
+    resources:
+        pages:
+            classes:
+                model: App\Entity\Cms\Page
+        page_categories:
+            classes:
+                model: App\Entity\Cms\PageCategory
+   

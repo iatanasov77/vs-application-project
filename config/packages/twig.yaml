@@ -1,0 +1,16 @@
+twig:
+    default_path: '%kernel.project_dir%/templates'
+
+    globals:
+        siteTitle: '%siteTitle%'
+        lang: '%lang%'
+        locale: '%locale%'
+        installedBundles: '%kernel.bundles%'
+        pageCategoriesTaxonomyCode: '%vs_cms.page_categories.taxonomy_code%'
+        
+    form_themes:
+        - '@FOSCKEditor/Form/ckeditor_widget.html.twig'
+
+when@test:
+    twig:
+        strict_variables: true

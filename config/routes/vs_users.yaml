@@ -1,0 +1,8 @@
+vs_user_authentication:
+    resource: "@VSUsersBundle/Resources/config/routing/authentication.yml"
+    prefix:   /
+
+vs_user_management:
+    resource: "@VSUsersBundle/Resources/config/routing/user_management.yml"
+    prefix:   /users
+

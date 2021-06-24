@@ -1,0 +1,23 @@
+parameters:
+    # Until Next VsApplicationBundle Version
+    vs_application.menu.config_file: "%kernel.project_dir%/config/packages/vs_application.yaml"
+
+    vs_application.main_menus: ['mainSystemMenu']
+
+services:
+    # Custom Menus
+    ######################################################
+    vs_org.main_menu_system:
+        autowire: false
+        class: Knp\Menu\MenuItem
+        factory: ["@vs_app.menu_builder", mainMenu]
+        arguments: ["@knp_menu.factory", 'mainSystemMenu']
+        tags:
+            - { name: knp_menu.menu, alias: mainSystem }
+    vs_org.main_menu_cms:
+        autowire: false
+        class: Knp\Menu\MenuItem
+        factory: ["@vs_app.menu_builder", mainMenu]
+        arguments: ["@knp_menu.factory", 'mainCmsMenu']
+        tags:
+            - { name: knp_menu.menu, alias: mainCms }

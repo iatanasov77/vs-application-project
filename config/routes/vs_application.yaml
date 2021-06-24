@@ -1,0 +1,12 @@
+vs_application:
+    resource: "@VSApplicationBundle/Resources/config/routing/application.yaml"
+    prefix:   /
+
+vs_application_settings:
+    resource: "@VSApplicationBundle/Resources/config/routing/settings.yaml"
+    prefix:   /
+    
+vs_application_taxonomy:
+    resource: "@VSApplicationBundle/Resources/config/routing/taxonomy.yaml"
+    prefix:   /
+   

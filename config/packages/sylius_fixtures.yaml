@@ -1,0 +1,10 @@
+imports:
+    - { resource: '@VSApplicationBundle/Resources/config/app/fixtures/application_configuration.yaml' }
+    - { resource: '@VSApplicationBundle/Resources/config/app/fixtures/multisite_application_configuration.yaml' }
+
+sylius_fixtures:
+    suites:                
+        vankosoft_sampledata_suite:
+            fixtures:
+                test_countries: ~
+
