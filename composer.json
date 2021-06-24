@@ -1,8 +1,19 @@
 {
+	"name": "vankosoft/application-project",
     "type": "project",
-    "license": "proprietary",
-    "minimum-stability": "stable",
-    "prefer-stable": true,
+    "description": "Starting point for vankosoft applications based on symfony and core sylius components.",
+    "keywords": [
+        "symfony",
+        "vankosoft",
+        "application"
+    ],
+    "homepage": "http://vankosoft.org",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ivan I. Atanasov"
+        }
+    ],
     "require": {
         "php": ">=7.2.5",
         "ext-ctype": "*",
