@@ -59,8 +59,11 @@ security:
                      # https://github.com/lexik/LexikJWTAuthenticationBundle/blob/master/Resources/doc/index.md#usage
                      #- lexik_jwt_authentication.jwt_token_authenticator
             entry_point: vs_users.security.login_form_authenticator
-                
-    
+
+    role_hierarchy:
+        ROLE_ADMIN:       [ROLE_AUTHOR, ROLE_USER, ROLE_SPECIFIC]
+        ROLE_SUPER_ADMIN: ROLE_ADMIN
+        ROLE_SPECIFIC: [ROLE_SPECIFIC_1, ROLE_SPECIFIC_2]
 
     # Easy way to control access for large sections of your site
     # Note: Only the *first* access control that matches will be used
@@ -71,4 +74,9 @@ security:
         - { path: ^/forgot-password/reset/, roles: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
         
-        - { path: ^/, roles: ROLE_ADMIN }
+        - { path: ^/settings, roles: [ROLE_ADMIN] }
+        - { path: ^/taxonomy, roles: [ROLE_ADMIN] }
+        - { path: ^/bundles/vs-users-subscriptions/mailchimp-audiences, roles: [ROLE_ADMIN] }
+        
+        - { path: ^/, roles: [ROLE_ADMIN, ROLE_AUTHOR] }
+

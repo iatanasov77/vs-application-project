@@ -56,6 +56,25 @@ vs_application:
                         routeParameters:
                           id: int
                         display: false
+            user_management:
+                name: User Management
+                uri: "javascript:;"
+                attributes:
+                    iconClass: icon_genius
+                childs:
+                    users_list:
+                        name: Users List
+                        route: vs_users_users_index
+                    user_create:
+                        name: Create User
+                        route: vs_users_users_create
+                    user_update:
+                        name: Update User
+                        route: vs_users_users_update
+                        routeParameters:
+                          id: int
+                        display: false
+
 #             newsletter:
 #                 name: Newsletter
 #                 uri: "javascript:;"
