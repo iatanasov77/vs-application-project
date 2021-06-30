@@ -2,7 +2,13 @@ doctrine_migrations:
     migrations_paths:
         # namespace is arbitrary but should be different from App\Migrations
         # as migrations classes should NOT be autoloaded
+        ################################################################################
+        #'MyCompany\ModuleA\Migrations': '%kernel.root_dir%/vendor/my-company/mod-a/src/Migrations'
+        'VS\ApplicationBundle\DoctrineMigrations': '@VSApplicationBundle/DoctrineMigrations'
         'App\DoctrineMigrations': '%kernel.project_dir%/src/DoctrineMigrations'
+    services: 
+        'Doctrine\Migrations\Version\Comparator': 'VS\ApplicationBundle\Component\DoctrineMigrations\ProjectVersionComparator'
+        
     enable_profiler: '%kernel.debug%'
     
     storage:
