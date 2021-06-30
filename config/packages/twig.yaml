@@ -5,6 +5,8 @@ twig:
         siteTitle: '%siteTitle%'
         lang: '%lang%'
         locale: '%locale%'
+        isMultiSite: '%multi_site%'
+        webSiteUrl: "http://website.url"
         installedBundles: '%kernel.bundles%'
         pageCategoriesTaxonomyCode: '%vs_cms.page_categories.taxonomy_code%'
         
