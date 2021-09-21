@@ -2,6 +2,7 @@ twig:
     default_path: '%kernel.project_dir%/templates'
 
     globals:
+        siteIcon: 'build/images/sf-positive.svg'
         siteTitle: '%siteTitle%'
         lang: '%lang%'
         locale: '%locale%'
