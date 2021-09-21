@@ -1,3 +1,13 @@
+1.0.0	|	Release date: **21.09.2021**
+============================================
+* New Features and Improvements:
+  - Upgrade to VS Application Bundle 1.0.x
+  - Add Documentation Directory
+  - Remove Unneeded Assets.
+  - Add Icon before Site Title.
+  - Change namespace of DoctrineMigrations\ProjectVersionComparator
+
+
 0.1.4	|	Release date: **30.06.2021**
 ============================================
 * New Features:
