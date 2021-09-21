@@ -1,4 +1,4 @@
 home:
     path: /
-    controller: App\Controller\DefaultController::index
+    controller: App\Controller\AdminPanel\DefaultController::index
 
