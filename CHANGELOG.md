@@ -1,3 +1,9 @@
+1.0.2	|	Release date: **22.09.2021**
+============================================
+* New Features and Refactoring:
+  - Renamed config/sites to config/applications .
+
+
 1.0.1	|	Release date: **22.09.2021**
 ============================================
 * Bug-Fixes:
