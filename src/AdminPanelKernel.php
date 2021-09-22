@@ -9,14 +9,28 @@ class AdminPanelKernel extends BaseKernel
 {
     use MicroKernelTrait;
 
+    private const APP_ID = 'admin-panel';
+    
+    public function getVarDir()
+    {
+        $dirVar = $this->getProjectDir() . '/var/' . self::APP_ID;
+        if ( isset( $_ENV['DIR_VAR'] ) ) {
+            $dirVar = $_ENV['DIR_VAR'] . '/' . self::APP_ID;
+        }
+        
+        return $dirVar;
+    }
+    
     public function getCacheDir()
     {
-        return isset( $_ENV['DIR_VAR'] ) ? $_ENV['DIR_VAR'] . '/cache' : parent::getCacheDir();
+        return $this->getVarDir() . '/cache/' . $this->environment;
+        //return parent::getCacheDir();
     }
     
     public function getLogDir()
     {
-        return isset( $_ENV['DIR_VAR'] ) ? $_ENV['DIR_VAR'] . '/log' : parent::getLogDir();
+        return $this->getVarDir() . '/log';
+        //return parent::getLogDir();
     }
     
     protected function configureContainer(ContainerConfigurator $container): void
