@@ -2,7 +2,7 @@ var Encore = require( '@symfony/webpack-encore' );
 
 Encore
     .setOutputPath( 'public/admin_panel/build/' )
-    .setPublicPath( '/build' )
+    .setPublicPath( '/build/' )
 
 	// FOS CkEditor
 	.copyFiles([
@@ -27,8 +27,7 @@ Encore
     .configureFilenames({
         js: '[name].js?[contenthash]',
         css: '[name].css?[contenthash]',
-        images: 'images/[name].[ext]?[hash:8]',
-        fonts: 'fonts/[name].[ext]?[hash:8]'
+        assets: '[name].[ext]?[hash:8]'
     })
     .enableSingleRuntimeChunk()
     .enableVersioning(Encore.isProduction())
@@ -41,6 +40,7 @@ Encore
     .addStyleEntry( 'css/global', './assets/admin_panel/css/main.scss' )
     
     .addEntry( 'js/settings', './assets/admin_panel/js/pages/settings.js' )
+    .addEntry( 'js/sites', './assets/admin_panel/js/pages/sites.js' )
     .addEntry( 'js/profile', './assets/admin_panel/js/pages/profile.js' )
     .addEntry( 'js/taxonomy-vocabolaries', './assets/admin_panel/js/pages/taxonomy-vocabolaries.js' )
     .addEntry( 'js/taxonomy-vocabolaries-edit', './assets/admin_panel/js/pages/taxonomy-vocabolaries-edit.js' )

@@ -12,7 +12,6 @@ parameters:
     languages:
         en: English
         bg: Български
-    multi_site: '%env(bool:MULTI_SITE)%'
     siteTitle: 'VankoSoft Application'
     menu.config_file: "%kernel.project_dir%/../config/packages/vs_application.yaml"
     

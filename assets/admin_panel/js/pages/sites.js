@@ -1,13 +1,16 @@
-require ( '../../css/custom.css' );
-require ( 'jquery-duplicate-fields/jquery.duplicateFields.js' );
+//require ( '../../css/custom.css' );
+//require ( 'jquery-duplicate-fields/jquery.duplicateFields.js' );
 
 $( function ()
 {
+
+/*
     $( '.attributesContainer' ).duplicateFields({
         btnRemoveSelector: ".btnRemoveField",
         btnAddSelector:    ".btnAddField"
     });
-    
+*/
+
     $( '.btnEdit' ).on( 'click', function()
     {
 		$.ajax({
