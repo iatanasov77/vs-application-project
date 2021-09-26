@@ -1,3 +1,10 @@
+1.0.3	|	Release date: **26.09.2021**
+============================================
+* Bug-Fixes:
+  - Fix AdminPanel-UserManagement Views.
+  - Fix assets for 'node v16.10.0'
+
+
 1.0.2	|	Release date: **22.09.2021**
 ============================================
 * New Features and Refactoring:
