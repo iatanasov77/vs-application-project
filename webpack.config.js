@@ -82,6 +82,9 @@ Encore
      })
     
     // Add Entries
+    .addStyleEntry( 'css/login', './assets/__application_slug__/css/login.scss' )
+    .addEntry( 'js/login', './assets/__application_slug__/js/login.js' )
+    
     .addStyleEntry( 'css/app', './assets/__application_slug__/css/main.scss' )
     .addEntry( 'js/app', './assets/__application_slug__/js/app.js' )
 ;
