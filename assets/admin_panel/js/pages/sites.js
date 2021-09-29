@@ -31,11 +31,13 @@ $( function ()
     
     $( '.btnSettings' ).on( 'click', function()
     {
+    	var applicationTitle	= $( this ).attr( 'data-application_title' );
     	$.ajax({
 			type: "GET",
 		 	url: $( this ).attr( 'data-url' ),
 			success: function( response )
 			{
+				$( '#modalApplicationSettingsTitle' ).text( applicationTitle );
 				$( '#siteSettings > div.card-body' ).html( response );
 				$( '#site-settings-modal' ).modal( 'toggle' );
 				$( '#btnEditInstallManual').show();
