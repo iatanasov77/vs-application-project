@@ -4,8 +4,6 @@
 /.env.local.php
 /.env.*.local
 /config/secrets/prod/prod.decrypt.private.php
-/public/admin_panel/build/
-/public/admin_panel/bundles/
 /var/
 /vendor/
 /node_modules/
@@ -39,6 +37,11 @@
 ###< lexik/jwt-authentication-bundle ###
 
 ###> symfony/webpack-encore-bundle ###
+/assets/controllers/
+/assets/styles/
+/assets/app.js
+/assets/bootstrap.js
+/assests/controllers.json
 /node_modules/
 /public/build/
 /public/bundles/
@@ -49,3 +52,8 @@ yarn-error.log
 ###> liip/imagine-bundle ###
 /public/media/cache/
 ###< liip/imagine-bundle ###
+
+###> VankosoftApplication Files ###
+/public/admin_panel/build/
+/public/admin_panel/bundles/
+###< VankosoftApplication Files ###

@@ -1,3 +1,9 @@
+1.0.5	|	Release date: **29.09.2021**
+============================================
+* Commits:
+  - Remove uneeded files.
+
+
 1.0.4	|	Release date: **29.09.2021**
 ============================================
 * Bug-Fixes and Improvements:
