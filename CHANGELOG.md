@@ -1,3 +1,11 @@
+1.0.4	|	Release date: **29.09.2021**
+============================================
+* Bug-Fixes and Improvements:
+  - Improve Application Assets.
+  - Fix ENV Vars.
+  - Add Application Webpack Config.
+
+
 1.0.3	|	Release date: **26.09.2021**
 ============================================
 * Bug-Fixes:
