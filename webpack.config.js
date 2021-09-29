@@ -58,4 +58,36 @@ adminPanelConfig.name = 'adminPanel';
 
 //=================================================================================================
 
-module.exports = [adminPanelConfig];
+Encore.reset();
+Encore
+    .setOutputPath( 'public/__application_slug__/build/' )
+    .setPublicPath( '/build' )
+   	
+    .autoProvidejQuery()
+    .enableSassLoader(function(sassOptions) {}, {
+        resolveUrlLoader: true
+    })
+    .configureFilenames({
+        js: '[name].js?[contenthash]',
+        css: '[name].css?[contenthash]',
+        assets: '[name].[ext]?[hash:8]'
+    })
+    .enableSingleRuntimeChunk()
+    .enableVersioning(Encore.isProduction())
+    .enableSourceMaps( !Encore.isProduction() )
+    
+    .copyFiles({
+         from: './assets/__application_slug__/images',
+         to: 'images/[path][name].[ext]',
+     })
+    
+    // Add Entries
+    .addStyleEntry( 'css/app', './assets/__application_slug__/css/main.scss' )
+    .addEntry( 'js/app', './assets/__application_slug__/js/app.js' )
+;
+
+const applicationConfig = Encore.getWebpackConfig();
+applicationConfig.name = '__application_slug__';
+
+//=================================================================================================
+module.exports = [adminPanelConfig, applicationConfig];
