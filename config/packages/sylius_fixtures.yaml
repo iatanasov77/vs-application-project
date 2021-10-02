@@ -1,6 +1,6 @@
 imports:
-    - { resource: '@VSApplicationBundle/Resources/config/app/fixtures/application_configuration.yaml' }
-    - { resource: '@VSApplicationBundle/Resources/config/app/fixtures/multisite_application_configuration.yaml' }
+    - { resource: '@VSApplicationInstalatorBundle/Resources/config/app/fixtures/application_configuration.yaml' }
+    #- { resource: '@VSApplicationInstalatorBundle/Resources/config/app/fixtures/sample_data.yaml' }
 
 sylius_fixtures:
     suites:                
