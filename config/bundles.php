@@ -24,9 +24,6 @@ return [
     Knp\Bundle\MenuBundle\KnpMenuBundle::class => ['all' => true],
     Knp\Bundle\PaginatorBundle\KnpPaginatorBundle::class => ['all' => true],
     BabDev\PagerfantaBundle\BabDevPagerfantaBundle::class => ['all' => true],
-    VS\ApplicationBundle\VSApplicationBundle::class => ['all' => true],
-    VS\CmsBundle\VSCmsBundle::class => ['all' => true],
-    VS\UsersBundle\VSUsersBundle::class => ['all' => true],
     Knp\Bundle\TimeBundle\KnpTimeBundle::class => ['all' => true],
     Liip\ImagineBundle\LiipImagineBundle::class => ['all' => true],
     SymfonyCasts\Bundle\VerifyEmail\SymfonyCastsVerifyEmailBundle::class => ['all' => true],
@@ -36,4 +33,8 @@ return [
     Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle::class => ['dev' => true, 'test' => true],
     Bazinga\Bundle\HateoasBundle\BazingaHateoasBundle::class => ['all' => true],
     Artgris\Bundle\FileManagerBundle\ArtgrisFileManagerBundle::class => ['all' => true],
+    VS\ApplicationInstalatorBundle\VSApplicationInstalatorBundle::class => ['all' => true],
+    VS\ApplicationBundle\VSApplicationBundle::class => ['all' => true],
+    VS\CmsBundle\VSCmsBundle::class => ['all' => true],
+    VS\UsersBundle\VSUsersBundle::class => ['all' => true],
 ];
