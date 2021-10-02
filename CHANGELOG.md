@@ -1,3 +1,9 @@
+1.1.2	|	Release date: **02.10.2021**
+============================================
+* Bug-Fixes:
+  - Enable ApplicationInstalatorBundle.
+
+
 1.1.1	|	Release date: **02.10.2021**
 ============================================
 * Bug-Fixes:
