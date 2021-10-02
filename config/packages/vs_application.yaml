@@ -1,3 +1,8 @@
+vs_application_instalator:
+    resources:
+        instalation_info:
+            classes:
+                model: App\Entity\Application\InstalationInfo
 vs_application:
     resources:
         site:
