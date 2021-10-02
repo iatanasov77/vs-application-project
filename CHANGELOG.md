@@ -1,3 +1,9 @@
+1.1.0	|	Release date: **02.10.2021**
+============================================
+* New Features:
+  - Separate Instalator into diferent Bundle.
+
+
 1.0.5	|	Release date: **29.09.2021**
 ============================================
 * Commits:
