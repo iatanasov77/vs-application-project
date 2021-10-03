@@ -1,3 +1,10 @@
+1.1.3	|	Release date: **03.10.2021**
+============================================
+* New Features:
+  - Update Application Core Version.
+  - Update the README file.
+
+
 1.1.2	|	Release date: **02.10.2021**
 ============================================
 * Bug-Fixes:
