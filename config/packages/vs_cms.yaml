@@ -6,4 +6,10 @@ vs_cms:
         page_categories:
             classes:
                 model: App\Entity\Cms\PageCategory
-   
+
+        multipage_toc:
+            classes:
+                model: App\Entity\Cms\MultiPageToc
+        multipage_toc_page:
+            classes:
+                model: App\Entity\Cms\TocPage
