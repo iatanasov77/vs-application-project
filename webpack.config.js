@@ -87,6 +87,8 @@ Encore
     
     .addStyleEntry( 'css/app', './assets/__application_slug__/css/main.scss' )
     .addEntry( 'js/app', './assets/__application_slug__/js/app.js' )
+    
+    .addEntry( 'js/home', './assets/__application_slug__/js/pages/home.js' )
 ;
 
 const applicationConfig = Encore.getWebpackConfig();
