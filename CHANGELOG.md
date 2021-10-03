@@ -1,3 +1,9 @@
+1.2.0	|	Release date: **03.10.2021**
+============================================
+* New Features:
+  - Add Missing Entities for Cms Bundle.
+
+
 1.1.3	|	Release date: **03.10.2021**
 ============================================
 * New Features:
