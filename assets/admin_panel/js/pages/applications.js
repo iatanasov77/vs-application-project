@@ -18,8 +18,8 @@ $( function ()
 		 	url: $( this ).attr( 'data-url' ),
 			success: function( response )
 			{
-				$( '#siteEdit > div.card-body' ).html( response );
-				$( '#site-edit-modal' ).modal( 'toggle' );
+				$( '#applicationEdit > div.card-body' ).html( response );
+				$( '#application-edit-modal' ).modal( 'toggle' );
 				$( '#btnEditInstallManual').show();
 			},
 			error: function()
@@ -38,8 +38,8 @@ $( function ()
 			success: function( response )
 			{
 				$( '#modalApplicationSettingsTitle' ).text( applicationTitle );
-				$( '#siteSettings > div.card-body' ).html( response );
-				$( '#site-settings-modal' ).modal( 'toggle' );
+				$( '#applicationSettings > div.card-body' ).html( response );
+				$( '#application-settings-modal' ).modal( 'toggle' );
 				$( '#btnEditInstallManual').show();
 			},
 			error: function()
@@ -49,12 +49,12 @@ $( function ()
 		});
     });
     
-    $( '#site-delete-modal' ).on( 'show.bs.modal', function ( event )
+    $( '#application-delete-modal' ).on( 'show.bs.modal', function ( event )
     {
     	  var button = $( event.relatedTarget ) // Button that triggered the modal
     	  
-    	  $( '#deleteSiteTitle').text( button.data( 'title' ) );
-    	  $( '#btnDeleteSite').attr( 'href', button.data( 'url' ) );
+    	  $( '#deleteApplicationTitle').text( button.data( 'title' ) );
+    	  $( '#btnDeleteApplication').attr( 'href', button.data( 'url' ) );
     	  
     	  /*
     	  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
@@ -70,14 +70,14 @@ $( function ()
     	$( '#formSettings_0' ).submit();
     });
     
-    $( '#btnSaveSite' ).on( 'click', function( e )
+    $( '#btnSaveApplication' ).on( 'click', function( e )
     {
-    	$( '#formSiteEdit' ).submit();
+    	$( '#formApplicationEdit' ).submit();
     });
     
     $( '#btnSaveSettings' ).on( 'click', function( e )
     {
-    	var settingsForm	= $( '#site-settings-modal' ).find( 'form' );
+    	var settingsForm	= $( '#application-settings-modal' ).find( 'form' );
     	
     	settingsForm.submit();
     });
