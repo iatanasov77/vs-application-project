@@ -40,7 +40,7 @@ Encore
     .addStyleEntry( 'css/global', './assets/admin_panel/css/main.scss' )
     
     .addEntry( 'js/settings', './assets/admin_panel/js/pages/settings.js' )
-    .addEntry( 'js/sites', './assets/admin_panel/js/pages/sites.js' )
+    .addEntry( 'js/applications', './assets/admin_panel/js/pages/applications.js' )
     .addEntry( 'js/profile', './assets/admin_panel/js/pages/profile.js' )
     .addEntry( 'js/taxonomy-vocabolaries', './assets/admin_panel/js/pages/taxonomy-vocabolaries.js' )
     .addEntry( 'js/taxonomy-vocabolaries-edit', './assets/admin_panel/js/pages/taxonomy-vocabolaries-edit.js' )
