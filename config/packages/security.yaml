@@ -49,15 +49,10 @@ security:
                 path: vs_application_logout
                 target: /login
                 invalidate_session: true
-                #success_handler: authentication_handler
-                success_handler: vs_users.security.logout_success_handler
 
-            guard:
-                authenticators:
-                    - vs_users.security.login_form_authenticator
-                     #- vs_users.security.token_authenticator    
-                     # https://github.com/lexik/LexikJWTAuthenticationBundle/blob/master/Resources/doc/index.md#usage
-                     #- lexik_jwt_authentication.jwt_token_authenticator
+            custom_authenticators:
+                - vs_users.security.login_form_authenticator
+                - vs_users.security.api_key_authenticator
             entry_point: vs_users.security.login_form_authenticator
 
     role_hierarchy:
@@ -68,15 +63,14 @@ security:
     # Easy way to control access for large sections of your site
     # Note: Only the *first* access control that matches will be used
     access_control:
-        - { path: ^/register, roles: IS_AUTHENTICATED_ANONYMOUSLY }
-        - { path: ^/verify, roles: IS_AUTHENTICATED_ANONYMOUSLY }
-        - { path: ^/forgot-password, roles: IS_AUTHENTICATED_ANONYMOUSLY }
-        - { path: ^/forgot-password/reset/, roles: IS_AUTHENTICATED_ANONYMOUSLY }
-        - { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: /_wdt/.*, roles: PUBLIC_ACCESS }
+        - { path: /_profiler/.*, roles: PUBLIC_ACCESS }
         
-        - { path: ^/settings, roles: [ROLE_ADMIN] }
-        - { path: ^/taxonomy, roles: [ROLE_ADMIN] }
-        - { path: ^/bundles/vs-users-subscriptions/mailchimp-audiences, roles: [ROLE_ADMIN] }
+        - { path: ^/login, roles: PUBLIC_ACCESS }
+        - { path: ^/register, roles: PUBLIC_ACCESS }
+        - { path: ^/verify, roles: PUBLIC_ACCESS }
+        - { path: ^/forgot-password, roles: PUBLIC_ACCESS }
+        - { path: ^/forgot-password/reset/, roles: PUBLIC_ACCESS }
         
-        - { path: ^/, roles: [ROLE_ADMIN, ROLE_AUTHOR] }
+        - { path: ^/, roles: [ROLE_SUPER_ADMIN] }
 
