@@ -1,3 +1,12 @@
+1.3.0	|	Release date: **10.10.2021**
+============================================
+* New Features:
+  - Updating Vankosoft Buhdles Versions.
+  - Updating security.yaml config to the New Authenticators.
+* Bug-Fixes:
+  - Remove Logout Success Handler from Config.
+
+
 1.2.1	|	Release date: **06.10.2021**
 ============================================
 * New Features:
