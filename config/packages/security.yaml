@@ -49,8 +49,6 @@ security:
                 path: vs_application_logout
                 target: /login
                 invalidate_session: true
-                #success_handler: authentication_handler
-                success_handler: vs_users.security.logout_success_handler
 
             custom_authenticators:
                 - vs_users.security.login_form_authenticator
