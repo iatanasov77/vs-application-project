@@ -1,21 +1,17 @@
 doctrine_migrations:
-    migrations_paths:
-        # namespace is arbitrary but should be different from App\Migrations
-        # as migrations classes should NOT be autoloaded
-        ################################################################################
-        #'MyCompany\ModuleA\Migrations': '%kernel.root_dir%/vendor/my-company/mod-a/src/Migrations'
-        'VS\ApplicationBundle\DoctrineMigrations': '@VSApplicationBundle/DoctrineMigrations'
-        'App\DoctrineMigrations': '%kernel.project_dir%/src/DoctrineMigrations'
-    services: 
-        'Doctrine\Migrations\Version\Comparator': 'VS\ApplicationBundle\Component\DoctrineMigrations\ProjectVersionComparator'
-        
     enable_profiler: '%kernel.debug%'
     
+    migrations_paths:
+        'App\DoctrineMigrations': '%kernel.project_dir%/src/DoctrineMigrations'
+
     storage:
-        # Default (SQL table) metadata storage configuration
         table_storage:
             table_name: 'VSAPP_Migrations'
             version_column_name: 'version'
             version_column_length: 1024
             executed_at_column_name: 'executed_at'
+
+    services:
+        'Doctrine\Migrations\Version\MigrationFactory': 'SyliusLabs\DoctrineMigrationsExtraBundle\Factory\ContainerAwareVersionFactory'
+        'Doctrine\Migrations\Version\Comparator': 'SyliusLabs\DoctrineMigrationsExtraBundle\Comparator\TopologicalVersionComparator'
 

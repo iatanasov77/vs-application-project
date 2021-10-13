@@ -37,4 +37,5 @@ return [
     VS\ApplicationBundle\VSApplicationBundle::class => ['all' => true],
     VS\CmsBundle\VSCmsBundle::class => ['all' => true],
     VS\UsersBundle\VSUsersBundle::class => ['all' => true],
+    SyliusLabs\DoctrineMigrationsExtraBundle\SyliusLabsDoctrineMigrationsExtraBundle::class => ['all' => true],
 ];
