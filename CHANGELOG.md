@@ -1,3 +1,9 @@
+1.3.1	|	Release date: **13.10.2021**
+============================================
+* New Features:
+  - Add sylius-labs/doctrine-migrations-extra-bundle for sort the migrations properly.
+
+
 1.3.0	|	Release date: **10.10.2021**
 ============================================
 * New Features:
