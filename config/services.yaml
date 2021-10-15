@@ -12,7 +12,7 @@ parameters:
     languages:
         en: English
         bg: Български
-    applicationTitle: 'VankoSoft Application'
+    applicationTitle: 'SuperAdmin Panel'
     menu.config_file: "%kernel.project_dir%/../config/packages/vs_application.yaml"
     
     vs_cms.page_categories.taxonomy_code: 'page-categories'
