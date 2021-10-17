@@ -1,3 +1,9 @@
+1.3.4	|	Release date: **17.10.2021**
+============================================
+* New Features:
+  - Set AdminPanelKernel to extends base Kernel from VankoSoft ApplicationBundle.
+
+
 1.3.3	|	Release date: **17.10.2021**
 ============================================
 * New Features:
