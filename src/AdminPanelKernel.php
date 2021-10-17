@@ -1,62 +1,37 @@
 <?php namespace App;
 
-use Symfony\Bundle\FrameworkBundle\Kernel\MicroKernelTrait;
-use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
-use Symfony\Component\HttpKernel\Kernel as BaseKernel;
-use Symfony\Component\Routing\Loader\Configurator\RoutingConfigurator;
+use Symfony\Component\Config\Loader\LoaderInterface;
+use Symfony\Component\DependencyInjection\ContainerBuilder;
+use Symfony\Component\Config\Resource\FileResource;
+use Symfony\Component\Routing\RouteCollectionBuilder;
+
+use VS\ApplicationBundle\Component\Application\Kernel as BaseKernel;
 
 class AdminPanelKernel extends BaseKernel
 {
-    use MicroKernelTrait;
+    //const VERSION       = '1.3.3';
     
-    private const APP_ID = 'admin-panel';
-    
-    public function getVarDir()
+    protected function configureContainer( ContainerBuilder $container, LoaderInterface $loader ): void
     {
-        $dirVar = $this->getProjectDir() . '/var';
-        if ( isset( $_ENV['DIR_VAR'] ) ) {
-            $dirVar = $_ENV['DIR_VAR'];
-        }
+        $container->setParameter( 'vs_application.session_save_path', $this->getVarDir() . '/sessions/' );
         
-        return $dirVar;
+        $container->addResource( new FileResource( $this->getProjectDir().'/config/bundles.php' ) );
+        //$container->setParameter( 'container.dumper.inline_class_loader', true );
+        
+        $confDir    = $this->getProjectDir() . '/config';
+        
+        $loader->load( $confDir . '/{packages}/*' . self::CONFIG_EXTS, 'glob' );
+        $loader->load( $confDir . '/{packages}/' . $this->environment . '/**/*' . self::CONFIG_EXTS, 'glob' );
+        $loader->load( $confDir . '/{services}' . self::CONFIG_EXTS, 'glob' );
+        $loader->load( $confDir . '/{services}_' . $this->environment . self::CONFIG_EXTS, 'glob' );
     }
     
-    public function getCacheDir()
+    protected function configureRoutes( RouteCollectionBuilder $routes ): void
     {
-        return $this->getVarDir() . '/' . self::APP_ID . '/cache/' . $this->environment;
-        //return parent::getCacheDir();
-    }
-    
-    public function getLogDir()
-    {
-        return $this->getVarDir() . '/' . self::APP_ID . '/log';
-        //return parent::getLogDir();
-    }
-    
-    protected function configureContainer(ContainerConfigurator $container): void
-    {
-        $container->parameters()->set( 'vs_application.session_save_path', $this->getVarDir() . '/sessions/' );
+        $confDir    = $this->getProjectDir() . '/config';
         
-        $container->import('../config/{packages}/*.yaml');
-        $container->import('../config/{packages}/'.$this->environment.'/*.yaml');
-        
-        if (is_file(\dirname(__DIR__).'/config/services.yaml')) {
-            $container->import('../config/services.yaml');
-            $container->import('../config/{services}_'.$this->environment.'.yaml');
-        } else {
-            $container->import('../config/{services}.php');
-        }
-    }
-    
-    protected function configureRoutes(RoutingConfigurator $routes): void
-    {
-        $routes->import('../config/{routes}/'.$this->environment.'/*.yaml');
-        $routes->import('../config/{routes}/*.yaml');
-        
-        if (is_file(\dirname(__DIR__).'/config/routes.yaml')) {
-            $routes->import('../config/routes.yaml');
-        } else {
-            $routes->import('../config/{routes}.php');
-        }
+        $routes->import( $confDir . '/{routes}/' . $this->environment . '/**/*' . self::CONFIG_EXTS, '/', 'glob' );
+        $routes->import( $confDir . '/{routes}/*' . self::CONFIG_EXTS, '/', 'glob' );
+        $routes->import( $confDir . '/{routes}' . self::CONFIG_EXTS, '/', 'glob' );
     }
 }
