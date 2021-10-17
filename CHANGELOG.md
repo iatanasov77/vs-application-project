@@ -1,3 +1,10 @@
+1.3.3	|	Release date: **17.10.2021**
+============================================
+* New Features:
+  - Change Main AdminPanel Application Tile.
+  - Setting up a Coockie LifeTime from Parameter for Main AdminPanel Application.
+
+
 1.3.2	|	Release date: **15.10.2021**
 ============================================
 * New Features:
