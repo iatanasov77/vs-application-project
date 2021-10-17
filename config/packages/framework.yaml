@@ -14,6 +14,9 @@ framework:
         save_path: '%vs_application.session_save_path%'
         cookie_domain: '%env(API_TOKEN_DOMAIN)%'
         
+        cookie_lifetime: '%vs_users.cookie_lifetime%'
+        gc_maxlifetime: '%vs_users.cookie_lifetime%'
+        
 when@test:
     framework:
         test: true
