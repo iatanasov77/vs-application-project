@@ -1,3 +1,9 @@
+1.3.6	|	Release date: **18.10.2021**
+============================================
+* Bug-Fixes and Improvements:
+  - Remove uneeded config of SymfonyCasts Reset Password.
+
+
 1.3.5	|	Release date: **18.10.2021**
 ============================================
 * Bug-Fixes:
