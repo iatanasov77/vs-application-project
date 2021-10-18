@@ -8,7 +8,7 @@ twig:
         locale: '%locale%'
         webSiteUrl: "http://website.url"
         installedBundles: '%kernel.bundles%'
-        pageCategoriesTaxonomyCode: '%vs_cms.page_categories.taxonomy_code%'
+        pageCategoriesTaxonomyCode: '%vs_application.page_categories.taxonomy_code%'
         
     form_themes:
         - '@FOSCKEditor/Form/ckeditor_widget.html.twig'

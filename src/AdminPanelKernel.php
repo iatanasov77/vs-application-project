@@ -9,7 +9,7 @@ use VS\ApplicationBundle\Component\Application\Kernel as BaseKernel;
 
 class AdminPanelKernel extends BaseKernel
 {
-    //const VERSION       = '1.3.3';
+    const VERSION       = '1.3.3';
     
     protected function configureContainer( ContainerBuilder $container, LoaderInterface $loader ): void
     {
