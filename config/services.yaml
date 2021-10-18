@@ -14,8 +14,9 @@ parameters:
         bg: Български
     applicationTitle: 'SuperAdmin Panel'
     
-    vs_application.version: !php/const VS\ApplicationBundle\Component\Application\Kernel::VERSION
+    vs_application.version: !php/const App\AdminPanelKernel::VERSION
     vs_application.public_dir: "%kernel.project_dir%/public/admin_panel"
+    vs_application.page_categories.taxonomy_code: 'page-categories'
     
     vs_users.login_route: 'vs_application_login'
     vs_users.login_by: 'username'

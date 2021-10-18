@@ -1,3 +1,10 @@
+1.3.5	|	Release date: **18.10.2021**
+============================================
+* Bug-Fixes:
+  - Git Ignore the file VSAPP_VERSION.
+  - configs and Kernel fixes.
+
+
 1.3.4	|	Release date: **17.10.2021**
 ============================================
 * New Features:

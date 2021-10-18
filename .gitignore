@@ -54,6 +54,7 @@ yarn-error.log
 ###< liip/imagine-bundle ###
 
 ###> VankosoftApplication Files ###
+/VSAPP_VERSION
 /public/admin_panel/build/
 /public/admin_panel/bundles/
 ###< VankosoftApplication Files ###
