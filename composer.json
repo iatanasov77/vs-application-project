@@ -24,8 +24,7 @@
         "symfony/notifier": "5.3.*",
         "symfony/runtime": "5.3.*",
         
-        "vankosoft/cms-bundle": "^1.3",
-        "vankosoft/users-bundle": "^1.3"
+        "vankosoft/application": "^1.4"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.5",

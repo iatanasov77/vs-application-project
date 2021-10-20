@@ -1,7 +1,7 @@
-# vs-application-project
+# VankoSoft Application
 
-Installation
--------------
+Create Project
+---------------
 
 ```bash
 $ wget http://getcomposer.org/composer.phar
@@ -11,8 +11,8 @@ $ cd VankosoftApplication
 Edit .env file to setup your Aplication Database Name and your host url If You Want.
 
 
-Installation
--------------
+Installation ( Setup Project )
+-------------------------------
 ```
 $ php bin/console vankosoft:install
 $ yarn install
