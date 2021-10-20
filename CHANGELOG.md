@@ -1,3 +1,11 @@
+1.4.0	|	Release date: **20.10.2021**
+============================================
+* New Features:
+  - Update Readme file.
+  - Add Requirement to Vankosoft Application Library Package.
+  - Change AdminPanelKernel Version..
+
+
 1.3.6	|	Release date: **18.10.2021**
 ============================================
 * Bug-Fixes and Improvements:
