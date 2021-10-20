@@ -1,4 +1,4 @@
-# vs-application-project
+# VankoSoft Application
 
 Create Project
 ---------------
