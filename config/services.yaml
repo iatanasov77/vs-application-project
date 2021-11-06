@@ -38,6 +38,7 @@ services:
         exclude:
             - '../src/DependencyInjection/'
             - '../src/Entity/'
+            - '../src/Form/'
             - '../src/AdminPanelKernel.php'
             - '../src/Tests/'
             
