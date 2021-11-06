@@ -51,6 +51,7 @@ Encore
     .addEntry( 'js/pages-edit', './assets/admin_panel/js/pages/pages-edit.js' )
     
     .addEntry( 'js/users-edit', './assets/admin_panel/js/pages/users-edit.js' )
+    .addEntry( 'js/users-roles', './assets/admin_panel/js/pages/users-roles.js' )
 ;
 
 const adminPanelConfig = Encore.getWebpackConfig();
