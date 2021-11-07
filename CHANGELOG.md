@@ -1,3 +1,9 @@
+1.4.24	|	Release date: **07.11.2021**
+============================================
+* Bug-Fixes:
+  - Fix Public Dir for AdminPanel in Composer Scripts.
+
+
 1.4.23	|	Release date: **07.11.2021**
 ============================================
 * Bug-Fixes:
