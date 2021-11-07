@@ -1,3 +1,9 @@
+1.4.23	|	Release date: **07.11.2021**
+============================================
+* Bug-Fixes:
+  - Update services for new configs layout.
+
+
 1.4.22	|	Release date: **07.11.2021**
 ============================================
 * Bug-Fixes:
