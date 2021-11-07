@@ -11,6 +11,21 @@ class AdminPanelKernel extends BaseKernel
 {
     const VERSION       = '1.4.20';
     
+    /**
+     * Override MicroKernelTrait::registerBundles()
+     * 
+     * {@inheritdoc}
+     */
+    public function registerBundles(): iterable
+    {
+        $contents = require $this->getProjectDir().'/config/admin-panel/bundles.php';
+        foreach ($contents as $class => $envs) {
+            if ($envs[$this->environment] ?? $envs['all'] ?? false) {
+                yield new $class();
+            }
+        }
+    }
+    
     protected function configureContainer( ContainerBuilder $container, LoaderInterface $loader ): void
     {
         $container->setParameter( 'vs_application.session_save_path', $this->getVarDir() . '/sessions/' );
