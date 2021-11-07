@@ -1,7 +1,7 @@
 var Encore = require( '@symfony/webpack-encore' );
 
 Encore
-    .setOutputPath( 'public/admin_panel/build/' )
+    .setOutputPath( 'public/admin-panel/build/' )
     .setPublicPath( '/build/' )
 
 	// FOS CkEditor
@@ -16,7 +16,7 @@ Encore
     ])
     
     .copyFiles({
-         from: './assets/admin_panel/images',
+         from: './assets/admin-panel/images',
          to: 'images/[path][name].[ext]',
      })
     
@@ -36,21 +36,24 @@ Encore
     //////////////////////////////////////////////////////////////////
     // ASSETS
     //////////////////////////////////////////////////////////////////
-    .addEntry( 'js/app', './assets/admin_panel/js/app.js' )
-    .addStyleEntry( 'css/global', './assets/admin_panel/css/main.scss' )
+    .addEntry( 'js/app', './assets/admin-panel/js/app.js' )
+    .addStyleEntry( 'css/global', './assets/admin-panel/css/main.scss' )
     
-    .addEntry( 'js/settings', './assets/admin_panel/js/pages/settings.js' )
-    .addEntry( 'js/applications', './assets/admin_panel/js/pages/applications.js' )
-    .addEntry( 'js/profile', './assets/admin_panel/js/pages/profile.js' )
-    .addEntry( 'js/taxonomy-vocabolaries', './assets/admin_panel/js/pages/taxonomy-vocabolaries.js' )
-    .addEntry( 'js/taxonomy-vocabolaries-edit', './assets/admin_panel/js/pages/taxonomy-vocabolaries-edit.js' )
+    .addEntry( 'js/settings', './assets/admin-panel/js/pages/settings.js' )
+    .addEntry( 'js/applications', './assets/admin-panel/js/pages/applications.js' )
+    .addEntry( 'js/profile', './assets/admin-panel/js/pages/profile.js' )
+    .addEntry( 'js/taxonomy-vocabolaries', './assets/admin-panel/js/pages/taxonomy-vocabolaries.js' )
+    .addEntry( 'js/taxonomy-vocabolaries-edit', './assets/admin-panel/js/pages/taxonomy-vocabolaries-edit.js' )
     
-    .addEntry( 'js/pages-categories', './assets/admin_panel/js/pages/pages_categories.js' )
-    .addEntry( 'js/pages-categories-edit', './assets/admin_panel/js/pages/pages_categories_edit.js' )
-    .addEntry( 'js/pages-index', './assets/admin_panel/js/pages/pages-index.js' )
-    .addEntry( 'js/pages-edit', './assets/admin_panel/js/pages/pages-edit.js' )
+    .addEntry( 'js/pages-categories', './assets/admin-panel/js/pages/pages_categories.js' )
+    .addEntry( 'js/pages-categories-edit', './assets/admin-panel/js/pages/pages_categories_edit.js' )
+    .addEntry( 'js/pages-index', './assets/admin-panel/js/pages/pages-index.js' )
+    .addEntry( 'js/pages-edit', './assets/admin-panel/js/pages/pages-edit.js' )
+    .addEntry( 'js/multipage-toc-index', './assets/admin-panel/js/pages/multipage-toc-index.js' )
     
-    .addEntry( 'js/users-edit', './assets/admin_panel/js/pages/users-edit.js' )
+    .addEntry( 'js/users-edit', './assets/admin-panel/js/pages/users-edit.js' )
+    .addEntry( 'js/users-roles-index', './assets/admin-panel/js/pages/users-roles-index.js' )
+    .addEntry( 'js/users-roles-edit', './assets/admin-panel/js/pages/users-roles-edit.js' )
 ;
 
 const adminPanelConfig = Encore.getWebpackConfig();

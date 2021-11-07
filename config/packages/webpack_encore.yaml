@@ -1,8 +1,0 @@
-framework:
-    assets:
-      json_manifest_path: '%kernel.project_dir%/public/admin_panel/build/manifest.json'
-
-webpack_encore:
-    output_path: '%kernel.project_dir%/public/admin_panel/build'
-    builds:
-        admin_panel: '%kernel.project_dir%/public/admin_panel/build'
