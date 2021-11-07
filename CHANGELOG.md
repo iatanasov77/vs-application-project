@@ -1,3 +1,11 @@
+1.4.20	|	Release date: **07.11.2021**
+============================================
+* New Features, Additions and Refactoring :
+  - Exclude src/Form/ from services defaults.
+  - Add New JS Assets.
+  - Many Others Fixes, Additions and Refactoring.
+
+
 1.4.0	|	Release date: **20.10.2021**
 ============================================
 * New Features:
