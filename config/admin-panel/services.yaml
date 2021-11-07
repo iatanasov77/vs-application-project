@@ -36,14 +36,14 @@ services:
     App\:
         resource: '../src/*'
         exclude:
-            - '../src/DependencyInjection/'
-            - '../src/Entity/'
-            - '../src/Form/'
-            - '../src/AdminPanelKernel.php'
-            - '../src/Tests/'
+            - '../../src/DependencyInjection/'
+            - '../../src/Entity/'
+            - '../../src/Form/'
+            - '../../src/AdminPanelKernel.php'
+            - '../../src/Tests/'
             
     App\Controller\:
-        resource: '../src/Controller'
+        resource: '../../src/Controller'
         tags: ['controller.service_arguments']
         autowire: true
             
