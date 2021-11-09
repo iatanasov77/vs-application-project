@@ -60,7 +60,6 @@ yarn-error.log
 /public/admin-panel/bundles/
 
 # Except for the applications configs:
-!/config/admin-panel/*
-!/config/admin-panel/*/
-!/config/applications/*/
+!/config/admin-panel
+!/config/applications
 ###< VankosoftApplication Files ###

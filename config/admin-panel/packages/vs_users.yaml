@@ -9,6 +9,9 @@ vs_users:
         user_info:
             classes:
                 model: App\Entity\UserManagement\UserInfo
+        avatar_image:
+            classes:
+                model: App\Entity\UserManagement\AvatarImage
         user_activity:
             classes:
                 model: App\Entity\UserManagement\UserActivity

@@ -20,6 +20,9 @@ vs_application:
             translation:
                 classes:
                     model: App\Entity\Application\TaxonTranslation
+        taxon_image:
+            classes:
+                model: App\Entity\Application\TaxonImage
         translation:
             classes:
                 model: App\Entity\Application\Translation
@@ -75,6 +78,19 @@ vs_application:
                     user_update:
                         name: Update User
                         route: vs_users_users_update
+                        routeParameters:
+                          id: int
+                        display: false
+                        
+                    user_roles_list:
+                        name: User Roles
+                        route: vs_users_user_roles_index
+                    user_roles_create:
+                        name: Create Role
+                        route: vs_users_user_roles_create
+                    user_roles_update:
+                        name: Update Role
+                        route: vs_users_user_roles_update
                         routeParameters:
                           id: int
                         display: false
