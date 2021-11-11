@@ -1,3 +1,11 @@
+1.4.25	|	Release date: **11.11.2021**
+============================================
+* New Features:
+  - Add New Resource Entities.
+* Bug-Fixes:
+  - Some Fixes about new Configs Layout.
+
+
 1.4.24	|	Release date: **07.11.2021**
 ============================================
 * Bug-Fixes:
