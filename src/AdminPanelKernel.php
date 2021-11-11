@@ -43,7 +43,7 @@ class AdminPanelKernel extends BaseKernel
     
     protected function configureRoutes( RouteCollectionBuilder $routes ): void
     {
-        $confDir    = $this->getProjectDir() . '/config';
+        $confDir    = $this->getProjectDir() . '/config/admin-panel';
         
         $routes->import( $confDir . '/{routes}/' . $this->environment . '/**/*' . self::CONFIG_EXTS, '/', 'glob' );
         $routes->import( $confDir . '/{routes}/*' . self::CONFIG_EXTS, '/', 'glob' );
