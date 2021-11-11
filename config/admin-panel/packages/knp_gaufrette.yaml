@@ -3,7 +3,7 @@ knp_gaufrette:
         vs_application_image:
             local:
                 #directory: %kernel.cache_dir%/../media/image
-                directory: "%kernel.root_dir%/public/admin-panel/media/image"
+                directory: "%kernel.project_dir%/public/admin-panel/media/image"
                 create: true
     filesystems:
         vs_application_image:
