@@ -5,6 +5,12 @@ knp_gaufrette:
                 #directory: %kernel.cache_dir%/../media/image
                 directory: "%kernel.project_dir%/public/admin-panel/media/image"
                 create: true
+        vs_application_filemanager:
+            local:
+                directory: "%kernel.project_dir%/public/file_manager/gaufrette"
+                create: true
     filesystems:
         vs_application_image:
-            adapter: "%vs_cms.uploader.filesystem%"
+            adapter: "%vs_cms.image_uploader.filesystem%"
+        vs_application_filemanager:
+            adapter: "%vs_cms.filemanager_uploader.filesystem%"

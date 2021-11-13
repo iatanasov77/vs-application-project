@@ -13,3 +13,7 @@ vs_cms_toc:
 vs_cms_filemanager:
     resource: "@VSCmsBundle/Resources/config/routing/filemanager.yml"
     prefix: /vs_filemanager
+    
+artgris_filemanager:
+    resource: "@ArtgrisFileManagerBundle/Resources/config/routing.yml"
+    prefix: /artgris_filemanager

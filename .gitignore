@@ -4,7 +4,6 @@
 /.env.local.php
 /.env.*.local
 /config/secrets/prod/prod.decrypt.private.php
-/var/
 /vendor/
 /node_modules/
 ###< symfony/framework-bundle ###
@@ -54,12 +53,22 @@ yarn-error.log
 ###< liip/imagine-bundle ###
 
 ###> VankosoftApplication Files ###
+
 /config/*
 /VSAPP_VERSION
+
+# Public files ignores
 /public/admin-panel/build/
 /public/admin-panel/bundles/
+/public/admin-panel/media/
 
 # Except for the applications configs:
 !/config/admin-panel
 !/config/applications
+
+# Example Application ignores
+/public/test-vankosoft-application/build/
+/public/test-vankosoft-application/bundles/
+/public/test-vankosoft-application/media/
+
 ###< VankosoftApplication Files ###
