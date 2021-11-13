@@ -1,3 +1,13 @@
+1.4.26	|	Release date: **14.11.2021**
+============================================
+* New Features and Improvements:
+  - Comment DIR_VAR in .env file
+  - Add /var directory but ignore its contents.
+  - Git Ignore public/media files.
+  - Add Configs for ArtgrisFileManagerBundle
+  - Add FileManager Entities.
+
+
 1.4.25	|	Release date: **11.11.2021**
 ============================================
 * New Features:
