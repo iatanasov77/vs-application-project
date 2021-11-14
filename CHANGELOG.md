@@ -1,3 +1,9 @@
+1.5.0	|	Release date: **14.11.2021**
+============================================
+* New Features:
+  - Update to Library Version 1.5
+
+
 1.4.28	|	Release date: **14.11.2021**
 ============================================
 * New Features and Improvements:
