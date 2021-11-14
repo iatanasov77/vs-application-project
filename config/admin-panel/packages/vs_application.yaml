@@ -163,19 +163,29 @@ vs_application:
                         routeParameters:
                           id: int
                         display: false
-            filemanager:
-                name: File Manager
+            filemanager_vankosoft:
+                name: VankoSoft File Manager
+                uri: "javascript:;"
+                attributes:
+                    iconClass: icon_genius
+                childs:
+                    list_filemanagers:
+                        name: List Filemanagers
+                        uri: "javascript:;"
+            
+            filemanager_artgris:
+                name: Artgris File Manager
                 uri: "javascript:;"
                 attributes:
                     iconClass: icon_genius
                 childs:
                     browse:
                         name: Browse Files
-                        route: vs_cms_filemanager_list
+                        route: vs_cms_filemanager_artgris_list
                         #uri: "/filemanager/?conf=default"
                     upload:
                         name: Upload a File
-                        route: vs_cms_filemanager_upload
+                        route: vs_cms_filemanager_artgris_upload
         
         profileMenu:
             profile:
