@@ -12,10 +12,13 @@ framework:
     session:
         handler_id: session.handler.native_file
         save_path: '%vs_application.session_save_path%'
-        cookie_domain: '%env(API_TOKEN_DOMAIN)%'
+        cookie_domain: '%env(COOKIE_DOMAIN)%'
         
+        # The cookie_lifetime would be set to a relatively high value, 
+        # and the garbage collection gc_maxlifetime would be set to destroy sessions at whatever the desired idle period is.
+        #########################################################################################################################
         cookie_lifetime: '%vs_users.cookie_lifetime%'
-        gc_maxlifetime: '%vs_users.cookie_lifetime%'
+        gc_maxlifetime: '%vs_users.gc_maxlifetime%'
         
 when@test:
     framework:
