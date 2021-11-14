@@ -1,3 +1,9 @@
+1.4.28	|	Release date: **14.11.2021**
+============================================
+* New Features and Improvements:
+  - Improve Configurations.
+
+
 1.4.27	|	Release date: **14.11.2021**
 ============================================
 * New Features:
