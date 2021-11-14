@@ -1,3 +1,9 @@
+1.4.27	|	Release date: **14.11.2021**
+============================================
+* New Features:
+  - Add Vankosoft FileManager to the CMS Menu.
+
+
 1.4.26	|	Release date: **14.11.2021**
 ============================================
 * New Features and Improvements:
