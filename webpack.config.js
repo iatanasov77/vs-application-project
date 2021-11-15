@@ -54,6 +54,8 @@ Encore
     .addEntry( 'js/users-edit', './assets/admin-panel/js/pages/users-edit.js' )
     .addEntry( 'js/users-roles-index', './assets/admin-panel/js/pages/users-roles-index.js' )
     .addEntry( 'js/users-roles-edit', './assets/admin-panel/js/pages/users-roles-edit.js' )
+    
+    .addEntry( 'js/filemanager-index', './assets/admin-panel/js/pages/filemanager-index.js' )
 ;
 
 const adminPanelConfig = Encore.getWebpackConfig();

@@ -171,7 +171,18 @@ vs_application:
                 childs:
                     list_filemanagers:
                         name: List Filemanagers
-                        uri: "javascript:;"
+                        route: "vs_cms_file_manager_index"
+                        display: true
+                    create_filemanager:
+                        name: Create New Filemanager
+                        route: "vs_cms_file_manager_create"
+                        display: true
+                    update_filemanager:
+                        name: Edit Filemanager
+                        route: "vs_cms_file_manager_update"
+                        routeParameters:
+                          id: int
+                        display: false
             
             filemanager_artgris:
                 name: Artgris File Manager
