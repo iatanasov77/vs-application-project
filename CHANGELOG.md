@@ -1,3 +1,13 @@
+1.5.1	|	Release date: **18.11.2021**
+============================================
+* New Features and Imrovements:
+  - Add Encore Entry and Admin Menue Entries for Vankosoft FileManager.
+  - Remove AdminPanel Menu Services because its added into the the vendor package already.
+  - Rename Templates Directory of AdminPanel Application.
+  - Admin Panel Styling File Input.
+  - List and Upload Files of a FileManager.
+
+
 1.5.0	|	Release date: **14.11.2021**
 ============================================
 * New Features:

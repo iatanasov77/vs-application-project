@@ -109,6 +109,41 @@ table.gtreetable ul.dropdown-menu li a {
 }
 
 .profile_details_form .row {
-	    margin-right: 0;
-    	margin-left: 0;
+    margin-right: 0;
+   	margin-left: 0;
+}
+
+.custom-file {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: calc(2.125rem + 2px);
+    margin-bottom: 0;
+}
+
+input[type=file] {
+    color: #71748d;
+    background-color: #fff;
+    border-color: #a7a7f0;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(214 214 255 / 75%);
+}
+
+#cardUploadFile.card {
+    margin-bottom: 0 !important;
+}
+
+.custom-file-label {
+    top: 40px !important;
+    color: #ffffff !important; /* Hide This Label I use .col-form-label before this is only this used only file input styling. */
+}
+
+.custom-file-control {
+	position: absolute;
+	top: 45px;
+	left: 10px;
+	z-index: 2;
+	color: #71748d;
+	background-color: #fff;
+	width: 80% !important;
 }

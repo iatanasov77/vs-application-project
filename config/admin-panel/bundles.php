@@ -37,6 +37,7 @@ return [
     VS\ApplicationInstalatorBundle\VSApplicationInstalatorBundle::class => ['all' => true],
     VS\ApplicationBundle\VSApplicationBundle::class => ['all' => true],
     VS\CmsBundle\VSCmsBundle::class => ['all' => true],
+    SPE\FilesizeExtensionBundle\SPEFilesizeExtensionBundle::class => ['all' => true],
     VS\UsersBundle\VSUsersBundle::class => ['all' => true],
     SyliusLabs\DoctrineMigrationsExtraBundle\SyliusLabsDoctrineMigrationsExtraBundle::class => ['all' => true],
 ];
