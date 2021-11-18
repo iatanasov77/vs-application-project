@@ -137,3 +137,13 @@ input[type=file] {
     top: 40px !important;
     color: #ffffff !important; /* Hide This Label I use .col-form-label before this is only this used only file input styling. */
 }
+
+.custom-file-control {
+	position: absolute;
+	top: 45px;
+	left: 10px;
+	z-index: 2;
+	color: #71748d;
+	background-color: #fff;
+	width: 80% !important;
+}
