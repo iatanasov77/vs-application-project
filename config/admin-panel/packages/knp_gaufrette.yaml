@@ -7,7 +7,7 @@ knp_gaufrette:
                 create: true
         vs_application_filemanager:
             local:
-                directory: "%kernel.project_dir%/public/file_manager/gaufrette"
+                directory: "%vs_cms.filemanager_uploader.filesystem_directory%"
                 create: true
     filesystems:
         vs_application_image:
