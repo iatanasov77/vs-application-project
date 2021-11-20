@@ -1,3 +1,10 @@
+1.5.2	|	Release date: **20.11.2021**
+============================================
+* New Features:
+  - Improve Js for FileManager Upload Files.
+  - Set Gaufrette FilesSystem Directory From Parameter.
+
+
 1.5.1	|	Release date: **18.11.2021**
 ============================================
 * New Features and Imrovements:

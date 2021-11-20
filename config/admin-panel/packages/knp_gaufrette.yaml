@@ -1,16 +1,15 @@
 knp_gaufrette:
     adapters:
-        vs_application_image:
+        vs_application_profile:
             local:
-                #directory: %kernel.cache_dir%/../media/image
-                directory: "%kernel.project_dir%/public/admin-panel/media/image"
+                directory: "%vs_cms.filemanager_shared_media_gaufrette.profile%"
                 create: true
         vs_application_filemanager:
             local:
-                directory: "%kernel.project_dir%/public/file_manager/gaufrette"
+                directory: "%vs_cms.filemanager_shared_media_gaufrette.filemanager%"
                 create: true
     filesystems:
-        vs_application_image:
-            adapter: "%vs_cms.image_uploader.filesystem%"
+        vs_application_profile:
+            adapter: "%vs_cms.gaufrette.profile.filesystem"
         vs_application_filemanager:
-            adapter: "%vs_cms.filemanager_uploader.filesystem%"
+            adapter: "%vs_cms.gaufrette.filemanager.filesystem%"

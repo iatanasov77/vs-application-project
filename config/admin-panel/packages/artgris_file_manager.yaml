@@ -3,4 +3,4 @@
 artgris_file_manager:
     conf:
         default:
-            dir: "../../public/file_manager/uploads"
+            dir: "../../public/shared_media/artgris"
