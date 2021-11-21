@@ -1,3 +1,9 @@
+1.5.4	|	Release date: **21.11.2021**
+============================================
+* New Features:
+  - Add Composer Auto Script to Clear Liip Imagine Cache.
+
+
 1.5.3	|	Release date: **21.11.2021**
 ============================================
 * New Features:
