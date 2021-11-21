@@ -1,3 +1,9 @@
+1.5.5	|	Release date: **21.11.2021**
+============================================
+* Bug-Fixes:
+  - Add Public Dirs for shared_media/gaufrette/filemanager .
+
+
 1.5.4	|	Release date: **21.11.2021**
 ============================================
 * New Features:
