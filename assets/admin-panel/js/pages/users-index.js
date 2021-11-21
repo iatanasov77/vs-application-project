@@ -1,17 +1,16 @@
 require( '../includes/resource-delete.js' );
-//require ( 'jquery-duplicate-fields/jquery.duplicateFields.js' );
 
 $( function()
 {
-    $( '.btnUploadFiles' ).on( 'click', function()
+    $( '.btnUserInfo' ).on( 'click', function()
     {
         $.ajax({
             type: "GET",
             url: $( this ).attr( 'data-url' ),
             success: function( response )
             {
-                $( '#cardUploadFile > div.card-body' ).html( response );
-                $( '#modalUploadFile' ).modal( 'toggle' );
+                $( '#cardUserInfo > div.card-body' ).html( response );
+                $( '#modalUserInfo' ).modal( 'toggle' );
             },
             error: function()
             {
@@ -20,7 +19,7 @@ $( function()
         });
     });
 
-    $( '#modalUploadFile' ).on( 'submit', '#formUploadFile', function( e )
+    $( '#modalUserInfo' ).on( 'submit', '#formUserInfo', function( e )
     {
         e.preventDefault();
         e.stopPropagation();
@@ -42,12 +41,12 @@ $( function()
         });
     });
     
-    $( '#btnSaveFile' ).on( 'click', function( e )
+    $( '#btnSaveUserInfo' ).on( 'click', function( e )
     {
-        $( '#formUploadFile' ).submit();
+        $( '#formUserInfo' ).submit();
     });
     
-    $( '#modalUploadFile' ).on( 'change', '.custom-file-input', function( e )
+    $( '#modalUserInfo' ).on( 'change', '.custom-file-input', function( e )
     {
         let fileInput   = require( '../includes/file-input.js' );
         fileInput.setUploadFile( $( this ) );

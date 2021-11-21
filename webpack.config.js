@@ -51,6 +51,7 @@ Encore
     .addEntry( 'js/pages-edit', './assets/admin-panel/js/pages/pages-edit.js' )
     .addEntry( 'js/multipage-toc-index', './assets/admin-panel/js/pages/multipage-toc-index.js' )
     
+    .addEntry( 'js/users-index', './assets/admin-panel/js/pages/users-index.js' )
     .addEntry( 'js/users-edit', './assets/admin-panel/js/pages/users-edit.js' )
     .addEntry( 'js/users-roles-index', './assets/admin-panel/js/pages/users-roles-index.js' )
     .addEntry( 'js/users-roles-edit', './assets/admin-panel/js/pages/users-roles-edit.js' )

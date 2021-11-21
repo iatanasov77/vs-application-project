@@ -10,6 +10,6 @@ knp_gaufrette:
                 create: true
     filesystems:
         vs_application_profile:
-            adapter: "%vs_cms.gaufrette.profile.filesystem"
+            adapter: "%vs_cms.gaufrette.profile.filesystem%"
         vs_application_filemanager:
             adapter: "%vs_cms.gaufrette.filemanager.filesystem%"

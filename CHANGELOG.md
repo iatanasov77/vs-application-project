@@ -1,3 +1,13 @@
+1.5.3	|	Release date: **21.11.2021**
+============================================
+* New Features:
+  - Remove swiftmailer configs.
+  - Add Asset users-index.js
+* Bug-Fixes:
+  - Fix Asset.
+  - Fix Artgris Filemanager Config.
+
+
 1.5.2	|	Release date: **20.11.2021**
 ============================================
 * New Features:
