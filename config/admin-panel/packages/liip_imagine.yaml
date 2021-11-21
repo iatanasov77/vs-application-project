@@ -24,16 +24,16 @@ liip_imagine:
             quality: 75
             filters:
                 thumbnail: { size: [120, 90], mode: outbound }
-                background: { size: [124, 94], position: center, color: '#000000' }
+                background: { size: [124, 94], position: center, color: '#ffffff' }
         
         users_crud_index_thumb:
             quality: 75
             filters:
                 thumbnail: { size: [50, 50], mode: outbound }
-                background: { size: [50, 50], position: center, color: '#000000' }
+                background: { size: [50, 50], position: center, color: '#ffffff' }
                 
         file_manager_files_thumb:
             quality: 75
             filters:
                 thumbnail: { size: [50, 50], mode: outbound }
-                background: { size: [50, 50], position: center, color: '#000000' }
+                background: { size: [50, 50], position: center, color: '#ffffff' }
