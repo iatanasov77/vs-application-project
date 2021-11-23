@@ -2,7 +2,11 @@
 framework:
     secret: '%env(APP_SECRET)%'
     #csrf_protection: true
-    http_method_override: false
+    
+    #
+    # Very-Very Usefull to know about this configuration( especially for route methos PUT and DELETE) 
+    # https://symfony.com/doc/current/reference/configuration/framework.html#configuration-framework-http_method_override
+    http_method_override: true
 
     php_errors:
         log: true
