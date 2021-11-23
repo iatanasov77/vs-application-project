@@ -1,3 +1,9 @@
+1.5.6	|	Release date: **23.11.2021**
+============================================
+* Bug-Fixes:
+  - Some Very Usefull Config Fix for PUT and DELETE form methods.
+
+
 1.5.5	|	Release date: **21.11.2021**
 ============================================
 * Bug-Fixes:
