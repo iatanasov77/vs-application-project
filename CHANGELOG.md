@@ -1,3 +1,9 @@
+1.5.7	|	Release date: **28.11.2021**
+============================================
+* Bug-Fixes and Improvements:
+  - Improve Admin Panel Assets.
+
+
 1.5.6	|	Release date: **23.11.2021**
 ============================================
 * Bug-Fixes:
