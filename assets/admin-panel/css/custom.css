@@ -147,3 +147,7 @@ input[type=file] {
 	background-color: #fff;
 	width: 80% !important;
 }
+
+.textbox .textbox-text {
+    width: 100% !important;
+}
