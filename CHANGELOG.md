@@ -1,3 +1,9 @@
+1.5.8	|	Release date: **28.11.2021**
+============================================
+* Refactorin and Improvement:
+  - Remove Ignored Files.
+
+
 1.5.7	|	Release date: **28.11.2021**
 ============================================
 * Bug-Fixes and Improvements:
