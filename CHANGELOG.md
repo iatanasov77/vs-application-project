@@ -1,3 +1,9 @@
+1.5.9	|	Release date: **04.12.2021**
+============================================
+* New Features:
+  - Improve Security Configuration.
+
+
 1.5.8	|	Release date: **28.11.2021**
 ============================================
 * Refactorin and Improvement:
