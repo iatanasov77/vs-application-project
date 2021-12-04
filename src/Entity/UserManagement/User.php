@@ -9,5 +9,14 @@ use VS\UsersBundle\Model\User as BaseUser;
  */
 class User extends BaseUser
 {
-    
+    /**
+     * {@inheritDoc}
+     */
+    public function getRoles()
+    {
+        return $this->getRolesFromArray();
+        
+        /* EXAMPLE To Use RoleCollection */
+        //return $this->getRolesFromCollection();
+    }
 }
