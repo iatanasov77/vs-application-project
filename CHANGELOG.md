@@ -1,3 +1,12 @@
+1.5.10	|	Release date: **04.12.2021**
+============================================
+* New Features:
+  - Inherit Users Entity Method getRoles from Model.
+  - Update Webpack Config.
+* Bug-Fixes:
+  - Fix a Service Parameters.
+
+
 1.5.9	|	Release date: **04.12.2021**
 ============================================
 * New Features:
