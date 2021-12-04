@@ -25,7 +25,7 @@ parameters:
     # The cookie_lifetime would be set to a relatively high value, 
     # and the garbage collection gc_maxlifetime would be set to destroy sessions at whatever the desired idle period is.
     #########################################################################################################################
-    vs_users.cookie_lifetime: 86400 # 24 hours
+    vs_users.cookie.lifetime: 86400 # 24 hours
     vs_users.gc_maxlifetime: 1800   # 30 minutes
     vs_users.api_token.lifetime: 3600
     
