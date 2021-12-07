@@ -151,3 +151,11 @@ input[type=file] {
 .textbox .textbox-text {
     width: 100% !important;
 }
+
+.combobox-checkbox {
+    margin: 0 5px 0 5px !important;
+}
+
+.combobox-item-selected {
+    background-color: #ffffff !important;
+}
