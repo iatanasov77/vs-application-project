@@ -1,7 +1,7 @@
 <?php namespace App\Entity\Application;
 
 use Doctrine\ORM\Mapping as ORM;
-use VS\ApplicationBundle\Model\Taxon as BaseTaxon;
+use Vankosoft\ApplicationBundle\Model\Taxon as BaseTaxon;
 
 use Sylius\Component\Taxonomy\Model\TaxonTranslationInterface;
 

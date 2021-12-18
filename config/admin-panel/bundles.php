@@ -45,8 +45,8 @@ return [
     Bazinga\Bundle\HateoasBundle\BazingaHateoasBundle::class => ['all' => true],
     SPE\FilesizeExtensionBundle\SPEFilesizeExtensionBundle::class => ['all' => true],
     
-    VS\ApplicationInstalatorBundle\VSApplicationInstalatorBundle::class => ['all' => true],
-    VS\ApplicationBundle\VSApplicationBundle::class => ['all' => true],
-    VS\CmsBundle\VSCmsBundle::class => ['all' => true],
-    VS\UsersBundle\VSUsersBundle::class => ['all' => true],
+    Vankosoft\ApplicationInstalatorBundle\VSApplicationInstalatorBundle::class => ['all' => true],
+    Vankosoft\ApplicationBundle\VSApplicationBundle::class => ['all' => true],
+    Vankosoft\CmsBundle\VSCmsBundle::class => ['all' => true],
+    Vankosoft\UsersBundle\VSUsersBundle::class => ['all' => true],
 ];

@@ -12,5 +12,5 @@ stof_doctrine_extensions:
             #blameable:      false
             #uploadable:     false
     class:
-        loggable:       VS\ApplicationBundle\EventSubscriber\LoggableListener
+        loggable:       Vankosoft\ApplicationBundle\EventSubscriber\LoggableListener
  

@@ -1,7 +1,7 @@
 <?php namespace App\Entity\UserManagement;
 
 use Doctrine\ORM\Mapping as ORM;
-use VS\UsersBundle\Model\UserInfo as BaseUserInfo;
+use Vankosoft\UsersBundle\Model\UserInfo as BaseUserInfo;
 
 /**
  * @ORM\Entity

@@ -1,7 +1,7 @@
 <?php namespace App\Entity\Cms;
 
 use Doctrine\ORM\Mapping as ORM;
-use VS\CmsBundle\Model\FileManagerFile as BaseFileManagerFile;
+use Vankosoft\CmsBundle\Model\FileManagerFile as BaseFileManagerFile;
 
 /**
  * MultiPageToc
