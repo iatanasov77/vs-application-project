@@ -1,7 +1,7 @@
 <?php namespace App\Entity\Application;
 
 use Doctrine\ORM\Mapping as ORM;
-use VS\ApplicationInstalatorBundle\Model\InstalationInfo as BaseInstalationInfo;
+use Vankosoft\ApplicationInstalatorBundle\Model\InstalationInfo as BaseInstalationInfo;
 
 /**
  * @ORM\Entity

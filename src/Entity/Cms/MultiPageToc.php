@@ -1,7 +1,7 @@
 <?php namespace App\Entity\Cms;
 
 use Doctrine\ORM\Mapping as ORM;
-use VS\CmsBundle\Model\MultiPageToc as BaseMultiPageToc;
+use Vankosoft\CmsBundle\Model\MultiPageToc as BaseMultiPageToc;
 
 /**
  * MultiPageToc
