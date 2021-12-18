@@ -1,3 +1,12 @@
+1.6.0	|	Release date: **18.12.2021**
+============================================
+* New Features, Refactoring and Improvements:
+  - Update Assests.
+  - Improve Security Configuration.
+  - Change Vankosoft Namespace.
+  - Update Vankosoft Application Version.
+
+
 1.5.10	|	Release date: **04.12.2021**
 ============================================
 * New Features:
