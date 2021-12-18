@@ -56,9 +56,9 @@ security:
             entry_point: vs_users.security.login_form_authenticator
 
     role_hierarchy:
-        ROLE_ADMIN:       [ROLE_AUTHOR, ROLE_USER, ROLE_SPECIFIC]
-        ROLE_SUPER_ADMIN: ROLE_ADMIN
-        ROLE_SPECIFIC: [ROLE_SPECIFIC_1, ROLE_SPECIFIC_2]
+        ROLE_SUPER_ADMIN: []
+        ROLE_APPLICATION_ADMIN: [ROLE_TEST_VANKOSOFT_APPLICATION_ADMIN]
+        ROLE_TEST_VANKOSOFT_APPLICATION_ADMIN: [ROLE_TEST_VANKOSOFT_APPLICATION_AUTHOR, ROLE_TEST_VANKOSOFT_APPLICATION_USER]
 
     # Easy way to control access for large sections of your site
     # Note: Only the *first* access control that matches will be used
