@@ -39,6 +39,7 @@ security:
             # switch_user: true
             
             form_login:
+                enable_csrf: true
                 login_path: vs_application_login
                 check_path: vs_application_login
                 username_parameter: _username
