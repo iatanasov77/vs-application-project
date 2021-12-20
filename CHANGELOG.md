@@ -1,3 +1,9 @@
+1.6.1	|	Release date: **20.12.2021**
+============================================
+* Bug-Fixes:
+  - Fix AdminPanel Configs for Symfony 5.4
+
+
 1.6.0	|	Release date: **18.12.2021**
 ============================================
 * New Features, Refactoring and Improvements:
