@@ -1,3 +1,9 @@
+1.6.2	|	Release date: **21.12.2021**
+============================================
+* New Features:
+  - Use Roles From Collection In User Entity.
+
+
 1.6.1	|	Release date: **20.12.2021**
 ============================================
 * Bug-Fixes:
