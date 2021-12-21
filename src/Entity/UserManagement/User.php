@@ -14,9 +14,10 @@ class User extends BaseUser
      */
     public function getRoles()
     {
-        return $this->getRolesFromArray();
+        /* Use RolesArray ( OLD WAY )*/
+        //return $this->getRolesFromArray();
         
-        /* EXAMPLE To Use RoleCollection */
-        //return $this->getRolesFromCollection();
+        /* Use RolesCollection */
+        return $this->getRolesFromCollection();
     }
 }
