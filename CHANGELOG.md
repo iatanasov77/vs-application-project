@@ -1,3 +1,12 @@
+1.6.3	|	Release date: **27.12.2021**
+============================================
+* New Features and Improvements:
+  - Hide Login Screen Buttons 'Registration' and 'Forgot Password' for dev Environement.
+  - Update cistom.css
+  - Add Themes config.
+  - Add an Application Theme and Service to Load Templates from Theme.
+
+
 1.6.2	|	Release date: **21.12.2021**
 ============================================
 * New Features:
