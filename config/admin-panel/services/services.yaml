@@ -13,7 +13,6 @@ services:
             - '../../../src/Form/'
             - '../../../src/AdminPanelKernel.php'
             - '../../../src/Tests/'
-            - '../../../src/Controller/TestVankosoftApplication/'
             
     App\Controller\AdminPanel\:
         resource: '../../../src/Controller/AdminPanel'

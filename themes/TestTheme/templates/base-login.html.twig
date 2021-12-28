@@ -7,14 +7,14 @@
 		<link rel="icon" type="image/png" href="build/images/application-login-page/icons/favicon.ico"/>
         
         {% block stylesheets %}
-        	{{ encore_entry_link_tags( 'css/login' ) }}
+        	{{ encore_entry_link_tags( 'css/login', null, 'testThemeConfig' ) }}
         {% endblock %}
     	{% block javascripts_head %}{% endblock %}
     </head>
     <body>
 		{% block content %}{% endblock %}
         {% block javascripts %}
-        	{{ encore_entry_script_tags( 'js/login' ) }}
+        	{{ encore_entry_script_tags( 'js/login', null, 'testThemeConfig' ) }}
         {% endblock %}
 	</body>
 </html>
