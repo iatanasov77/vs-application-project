@@ -1,8 +1,11 @@
 var Encore = require( '@symfony/webpack-encore' );
 
+/**
+ *  AdminPanel Default Theme
+ */
 Encore
-    .setOutputPath( 'public/admin-panel/build/' )
-    .setPublicPath( '/build/' )
+    .setOutputPath( 'public/admin-panel/build/default/' )
+    .setPublicPath( '/build/default/' )
 
 	// FOS CkEditor
 	.copyFiles([
@@ -65,10 +68,13 @@ adminPanelConfig.name = 'adminPanel';
 
 //=================================================================================================
 
+/**
+ *  Application Default Theme
+ */
 Encore.reset();
 Encore
-    .setOutputPath( 'public/__application_slug__/build/' )
-    .setPublicPath( '/build' )
+    .setOutputPath( 'public/__application_slug__/build/default/' )
+    .setPublicPath( '/build/default' )
    	
     .autoProvidejQuery()
     .enableSassLoader(function(sassOptions) {}, {
@@ -91,11 +97,6 @@ Encore
     // Add Entries
     .addStyleEntry( 'css/login', './assets/__application_slug__/css/login.scss' )
     .addEntry( 'js/login', './assets/__application_slug__/js/login.js' )
-    .addStyleEntry( 'css/login-simple', './assets/__application_slug__/css/login-simple.css' )
-    .addEntry( 'js/login-simple', './assets/__application_slug__/js/login-simple.js' )
-    
-    .addStyleEntry( 'css/app', './assets/__application_slug__/css/main.scss' )
-    .addEntry( 'js/app', './assets/__application_slug__/js/app.js' )
     
     .addEntry( 'js/home', './assets/__application_slug__/js/pages/home.js' )
 ;
@@ -104,4 +105,47 @@ const applicationConfig = Encore.getWebpackConfig();
 applicationConfig.name = '__application_slug__';
 
 //=================================================================================================
-module.exports = [adminPanelConfig, applicationConfig];
+
+/**
+ *  Test Theme
+ */
+ Encore.reset();
+Encore
+    .setOutputPath( 'public/__application_slug__/build/test-theme/' )
+    .setPublicPath( '/build/test-theme' )
+    
+    .autoProvidejQuery()
+    .enableSassLoader(function(sassOptions) {}, {
+        resolveUrlLoader: true
+    })
+    .configureFilenames({
+        js: '[name].js?[contenthash]',
+        css: '[name].css?[contenthash]',
+        assets: '[name].[ext]?[hash:8]'
+    })
+    .enableSingleRuntimeChunk()
+    .enableVersioning(Encore.isProduction())
+    .enableSourceMaps( !Encore.isProduction() )
+    
+    .copyFiles({
+         from: './assets/test-theme/images',
+         to: 'images/[path][name].[ext]',
+     })
+    
+    // Add Entries
+    .addStyleEntry( 'css/login', './assets/test-theme/css/login.scss' )
+    .addEntry( 'js/login', './assets/test-theme/js/pages/login.js' )
+    
+    .addStyleEntry( 'css/app', './assets/test-theme/css/main.scss' )
+    .addEntry( 'js/app', './assets/test-theme/js/app.js' )
+    
+    .addEntry( 'js/home', './assets/test-theme/js/pages/home.js' )
+;
+
+const testThemeConfig = Encore.getWebpackConfig();
+testThemeConfig.name = 'test-theme';
+
+//=================================================================================================
+
+
+module.exports = [adminPanelConfig, applicationConfig, testThemeConfig];

@@ -7,10 +7,10 @@
 		<link rel="icon" type="image/png" href="build/images/application-login-page/icons/favicon.ico"/>
         
         {% block stylesheets %}
-        	{{ encore_entry_link_tags( 'css/app' ) }}
+        	{{ encore_entry_link_tags( 'css/app', null, 'testThemeConfig' ) }}
         {% endblock %}
     	{% block javascripts_head %}
-    		{{ encore_entry_script_tags( 'js/app' ) }}
+    		{{ encore_entry_script_tags( 'js/app', null, 'testThemeConfig' ) }}
     	{% endblock %}
     </head>
     <body>

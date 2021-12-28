@@ -5,8 +5,8 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
 class DefaultController extends AbstractController
-{    
-    public function openAdminPanel( Request $request ) : Response
+{
+    public function openAdminPanel( Request $request ): Response
     {
         $host   = $this->getParameter( 'vankosoft_host' ); // Get from Parameters
         return $this->redirect( 'http://http://admin.' . $host . '/' );
