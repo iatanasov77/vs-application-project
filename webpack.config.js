@@ -95,7 +95,7 @@ Encore
      })
     
     // Add Entries
-    .addStyleEntry( 'css/login', './assets/__application_slug__/css/login.scss' )
+    .addStyleEntry( 'css/login', './assets/__application_slug__/css/login.css' )
     .addEntry( 'js/login', './assets/__application_slug__/js/login.js' )
     
     .addEntry( 'js/home', './assets/__application_slug__/js/pages/home.js' )

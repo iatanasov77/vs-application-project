@@ -1,3 +1,10 @@
+1.6.5	|	Release date: **28.12.2021**
+============================================
+* Bug-Fixes:
+  - Simple Webpack Config Fix.
+  - Fix Theme Templates.
+
+
 1.6.4	|	Release date: **28.12.2021**
 ============================================
 * New Features:
