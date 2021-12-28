@@ -1,3 +1,9 @@
+1.6.4	|	Release date: **28.12.2021**
+============================================
+* New Features:
+  - Update and Refactor Assets.
+
+
 1.6.3	|	Release date: **27.12.2021**
 ============================================
 * New Features and Improvements:
