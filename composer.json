@@ -1,4 +1,5 @@
 {
+    "name": "vankosoft/application-project",
     "type": "project",
     "keywords": [
         "symfony",
