@@ -1,3 +1,13 @@
+1.7.0	|	Release date: **04.01.2022**
+============================================
+* New Features and Improvements:
+  - Update README file.
+  - Fix Project to Sumgony 5.4.*
+  - Add .env.dev File.
+  - Improve and Optimize AdminPanelKernel.
+  - Upgrade to Vankosoft Library 1.7.*
+
+
 1.6.5	|	Release date: **28.12.2021**
 ============================================
 * Bug-Fixes:
