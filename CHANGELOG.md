@@ -1,3 +1,13 @@
+1.7.2	|	Release date: **17.01.2022**
+============================================
+* New Features:
+  - Add Pagination Config For AdminPanel.
+  - Update AdminPanel Services Config.
+  - Add Default Themes for Applications.
+  - Add Default Themes for Applications.
+  - Remove Unneeded Assets.
+
+
 1.7.1	|	Release date: **04.01.2022**
 ============================================
 * Bug-Fixes:
