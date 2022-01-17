@@ -107,45 +107,20 @@ applicationConfig.name = '__application_slug__';
 //=================================================================================================
 
 /**
- *  Test Theme
+ *  Application Theme 1
  */
- Encore.reset();
-Encore
-    .setOutputPath( 'public/__application_slug__/build/test-theme/' )
-    .setPublicPath( '/build/test-theme' )
-    
-    .autoProvidejQuery()
-    .enableSassLoader(function(sassOptions) {}, {
-        resolveUrlLoader: true
-    })
-    .configureFilenames({
-        js: '[name].js?[contenthash]',
-        css: '[name].css?[contenthash]',
-        assets: '[name].[ext]?[hash:8]'
-    })
-    .enableSingleRuntimeChunk()
-    .enableVersioning(Encore.isProduction())
-    .enableSourceMaps( !Encore.isProduction() )
-    
-    .copyFiles({
-         from: './assets/test-theme/images',
-         to: 'images/[path][name].[ext]',
-     })
-    
-    // Add Entries
-    .addStyleEntry( 'css/login', './assets/test-theme/css/login.scss' )
-    .addEntry( 'js/login', './assets/test-theme/js/pages/login.js' )
-    
-    .addStyleEntry( 'css/app', './assets/test-theme/css/main.scss' )
-    .addEntry( 'js/app', './assets/test-theme/js/app.js' )
-    
-    .addEntry( 'js/home', './assets/test-theme/js/pages/home.js' )
-;
+Encore.reset();
+const applicationTheme1Config   = require('./themes/ApplicationTheme_1/webpack.config');
 
-const testThemeConfig = Encore.getWebpackConfig();
-testThemeConfig.name = 'test-theme';
+//=================================================================================================
+
+/**
+ *  Application Theme 2
+ */
+Encore.reset();
+const applicationTheme2Config   = require('./themes/ApplicationTheme_2/webpack.config');
 
 //=================================================================================================
 
 
-module.exports = [adminPanelConfig, applicationConfig, testThemeConfig];
+module.exports = [adminPanelConfig, applicationTheme1Config, applicationTheme2Config];

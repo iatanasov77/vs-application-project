@@ -63,7 +63,6 @@
             "cache:clear": "symfony-cmd",
             "liip:imagine:cache:remove": "symfony-cmd",
             "assets:install %PUBLIC_DIR%/admin-panel": "symfony-cmd",
-            "assets:install %PUBLIC_DIR%": "symfony-cmd",
             "ckeditor:install": "symfony-cmd"
         },
         "post-install-cmd": [
