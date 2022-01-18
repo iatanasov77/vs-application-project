@@ -1,3 +1,10 @@
+1.7.3	|	Release date: **18.01.2022**
+============================================
+* Bug-Fixes:
+  - Fix AdminPanel Services Config.
+  - Fix Application Themes.
+
+
 1.7.2	|	Release date: **17.01.2022**
 ============================================
 * New Features:
