@@ -1,5 +1,4 @@
 imports:
-    - { resource: services/services.yaml }
     - { resource: services/menu.yaml }
 
 # This file is the entry point to configure your own services.
@@ -55,7 +54,7 @@ services:
             - '../../src/Form/'
             - '../../src/Tests/'
             - '../../src/Controller/'
-            - '../../src/JunonaDimitrovgradKernel.php'
+            - '../../src/AdminPanelKernel.php'
         autowire: true
     
     # add more service definitions when explicit configuration is needed
