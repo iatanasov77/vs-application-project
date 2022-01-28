@@ -1,3 +1,11 @@
+1.7.4	|	Release date: **28.01.2022**
+============================================
+* New Features and Improvements:
+  - Add Directory public/shared_assets .
+  - Set configuration for translation default locale from parameters.
+  - Adding FosJsRouting and BazingaJsTranslations into AdminPanel Assets.
+
+
 1.7.3	|	Release date: **18.01.2022**
 ============================================
 * Bug-Fixes:
