@@ -24,7 +24,11 @@
         "jquery.nicescroll": "^3.7.6",
         "mdb-ui-kit": "^3.6.0",
         "popper": "^1.0.1",
-        "popper.js": "^1.15.0"
+        "popper.js": "^1.15.0",
+        
+        "jquery-ui": "^1.13.0",
+        "bazinga-translator": "^5.0.0",
+        "intl-messageformat": "^9.11.3"
     },
     "devDependencies": {
         "@symfony/stimulus-bridge": "^2.0.0",

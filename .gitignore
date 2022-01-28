@@ -61,6 +61,7 @@ yarn-error.log
 /public/admin-panel/build/
 /public/admin-panel/bundles/
 /public/admin-panel/media/
+/public/shared_assets/build/
 
 # Except for the applications configs:
 !/config/admin-panel
