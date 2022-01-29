@@ -1,3 +1,9 @@
+1.7.5	|	Release date: **29.01.2022**
+============================================
+* Bug-Fixes:
+  - Fix AdminPanel Icon Path in Twig Globals.
+
+
 1.7.4	|	Release date: **28.01.2022**
 ============================================
 * New Features and Improvements:
