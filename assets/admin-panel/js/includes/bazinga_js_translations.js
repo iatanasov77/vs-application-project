@@ -3,15 +3,23 @@ import { VsPath } from '../includes/fos_js_routes.js';
 // https://github.com/willdurand/BazingaJsTranslationBundle/blob/master/Resources/doc/index.md
 import Translator from 'bazinga-translator';
 
-var jsonTranslations    = {};
-$.ajax({
-    url: VsPath( 'bazinga_jstranslation_js', { '_format': 'json', 'domain': 'SalaryJ', 'locales': 'en,bg' } ),
-    dataType: 'json'
-}).done( function( data ) {
-    jsonTranslations    = data;
-});
+var jsonTranslations    = {
+    'VSApplicationBundle': {}
+};
 
-export function VsTranslator()
+export function VsLoadTranslations( domains )
 {
-    return Translator.fromJSON( jsonTranslations );
+    domains.forEach( function( domain ) {
+        $.ajax({
+            url: VsPath( 'bazinga_jstranslation_js', { '_format': 'json', 'domain': domain, 'locales': 'en,bg' } ),
+            dataType: 'json'
+        }).done( function( data ) {
+            jsonTranslations[domain]    = data;
+        });
+    });
+}
+
+export function VsTranslator( domain )
+{
+    return Translator.fromJSON( jsonTranslations[domain] );
 }
