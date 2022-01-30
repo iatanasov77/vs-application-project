@@ -1,3 +1,9 @@
+1.7.7	|	Release date: **30.01.2022**
+============================================
+* Bug-Fixes:
+  - Remove assets:install from composer.json. Its are handled by Webpack Encore.
+
+
 1.7.6	|	Release date: **30.01.2022**
 ============================================
 * Bug-Fixes:
