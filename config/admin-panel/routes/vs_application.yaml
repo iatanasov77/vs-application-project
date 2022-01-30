@@ -1,12 +1,18 @@
 vs_application:
     resource: "@VSApplicationBundle/Resources/config/routing/application.yaml"
     prefix:   /
+    options:
+        expose: true
 
 vs_application_settings:
     resource: "@VSApplicationBundle/Resources/config/routing/settings.yaml"
     prefix:   /
+    options:
+        expose: true
     
 vs_application_taxonomy:
     resource: "@VSApplicationBundle/Resources/config/routing/taxonomy.yaml"
     prefix:   /
+    options:
+        expose: true
    

@@ -5,4 +5,6 @@ vs_user_authentication:
 vs_user_management:
     resource: "@VSUsersBundle/Resources/config/routing/user_management.yml"
     prefix:   /users
+    options:
+        expose: true
 
