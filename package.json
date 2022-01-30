@@ -43,6 +43,8 @@
         "webpack-notifier": "^1.6.0"
     },
 	"resolutions": {
-    	"@kanety/jquery-simple-tree-table/jquery": "3.4.1"
+    	"@kanety/jquery-simple-tree-table/jquery": "3.4.1",
+        "jquery-ui/jquery": "3.4.1",
+        "jquery-ui-dist/jquery": "3.4.1"
 	}
 }
