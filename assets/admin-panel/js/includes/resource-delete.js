@@ -3,7 +3,8 @@ require( 'jquery-ui-dist/jquery-ui.js' );
 require( 'jquery-ui-dist/jquery-ui.css' );
 require( 'jquery-ui-dist/jquery-ui.theme.css' );
 
-import { VsTranslator } from '../includes/bazinga_js_translations.js';
+import { VsTranslator, VsLoadTranslations } from '../includes/bazinga_js_translations.js';
+VsLoadTranslations(['VSApplicationBundle']);
 
 var onResourceDeleteOk      = function() {
     $( '#deleteForm' ).submit();
@@ -12,21 +13,22 @@ var onResourceDeleteOk      = function() {
 var onResourceDeleteCancel  = function() {
     $( '#deleteForm' ).attr( 'action', '' );
     $( '#resource_delete__token' ).val( '' );
+    
     $( this ).dialog( "close" );
 }
 
 export function VsFormDlete( onOk, onCancel )
 {
     var myButtons = {};
-    var _Translator = VsTranslator();
+    var _Translator = VsTranslator( 'VSApplicationBundle' );
     
     //var translatedDialog    = '<div title="DELETE ITEM">Do you want to delete this Item?</div>';
-    var translatedDialog    = '<div title="' + _Translator.trans( 'salary-j.form.vs_form_delete.title' ) + '">' + 
-                                _Translator.trans( 'salary-j.form.vs_form_delete.message' ) + 
+    var translatedDialog    = '<div title="' + _Translator.trans( 'vs_application.form.vs_form_delete.title' ) + '">' + 
+                                _Translator.trans( 'vs_application.form.vs_form_delete.message' ) + 
                             '</div>';
     
-    myButtons[_Translator.trans( 'salary-j.form.vs_form_delete.btn_ok' )] = function() { onOk(); };
-    myButtons[_Translator.trans( 'salary-j.form.vs_form_delete.btn_cancel' )] = function() { onCancel(); };
+    myButtons[_Translator.trans( 'vs_application.form.vs_form_delete.btn_ok' )] = onOk;
+    myButtons[_Translator.trans( 'vs_application.form.vs_form_delete.btn_cancel' )] = onCancel;
     
     return $( translatedDialog ).dialog( { buttons: myButtons } );
 }
