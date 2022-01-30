@@ -1,3 +1,11 @@
+1.7.6	|	Release date: **30.01.2022**
+============================================
+* Bug-Fixes:
+  - Add Exposed Routes for AdminPanel.
+  - Fix Resolutions in package.json
+  - Fix AdminPanel Assets For Translated Resource Delete Dialog.
+
+
 1.7.5	|	Release date: **29.01.2022**
 ============================================
 * Bug-Fixes:
