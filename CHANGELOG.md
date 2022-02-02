@@ -1,3 +1,9 @@
+1.7.8	|	Release date: **02.02.2022**
+============================================
+* New Features and Improvements:
+  - Improve AdminPanelKernel
+
+
 1.7.7	|	Release date: **30.01.2022**
 ============================================
 * Bug-Fixes:
