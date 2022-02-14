@@ -1,3 +1,9 @@
+1.7.9	|	Release date: **14.02.2022**
+============================================
+* New Features:
+  - Add an Application Debug Controller.
+
+
 1.7.8	|	Release date: **02.02.2022**
 ============================================
 * New Features and Improvements:
