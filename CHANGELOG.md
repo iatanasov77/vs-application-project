@@ -1,3 +1,9 @@
+1.7.10	|	Release date: **14.02.2022**
+============================================
+* Bug-Fixes:
+  - Fix Default Themes and their asset configurations.
+
+
 1.7.9	|	Release date: **14.02.2022**
 ============================================
 * New Features:
