@@ -1,6 +1,11 @@
 require( 'jquery-easyui/css/easyui.css' );
 require( 'jquery-easyui/js/jquery.easyui.min.js' );
 
+import { VsDisplayPassword } from '../includes/password-generator.js';
+import { VsPath } from '../includes/fos_js_routes.js';
+import { VsTranslator, VsLoadTranslations } from '../includes/bazinga_js_translations.js';
+VsLoadTranslations(['VSApplicationBundle']);
+
 $( function()
 {
 	// BECAUSE: An invalid form control with name='' is not focusable.
@@ -52,6 +57,31 @@ $( function()
             var el      = opts.finder.getEl( this, row[opts.valueField] );
             el.find( 'input.combobox-checkbox' )._propAttr( 'checked', false );
         }
+    });
+    
+    $( '#btnGeneratePassword' ).on( 'click', function ( e )
+    {
+        $.ajax({
+            type: 'GET',
+            url: VsPath( 'vs_application_json_get_passwords', { 'quantity': 1 } ),
+            success: function ( data )
+            {
+                if ( data['status'] == 'ok' ) {
+                    var password    = data['data']['passwords'][0];
+                    
+                    $( '#user_form_plain_password_first' ).val( password );
+                    $( '#user_form_plain_password_second' ).val( password );
+                    
+                    var dialog  = VsDisplayPassword( password );
+                } else {
+                    alert( 'ERROR !!!' );
+                }
+            }, 
+            error: function( XMLHttpRequest, textStatus, errorThrown )
+            {
+                alert( 'ERROR !!!' );
+            }
+        });
     });
 });
  

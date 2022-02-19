@@ -6,9 +6,6 @@ doctrine:
         # either here or in the DATABASE_URL env var (see .env file)
         #server_version: '13'
         
-        # Ignore Webonaute\DoctrineFixturesGeneratorBundle tables to be added to migrations
-        schema_filter: '/^(?!wbnt_dfgb_|taxon_translation|sylius_taxon|sylius_taxon_translation|sylius_locale|ext_log_entries|package|plan|package_plan|payment_plan_subscription).*$/'
-        
         logging: true
         driver: 'pdo_mysql'
         server_version: '5.6'

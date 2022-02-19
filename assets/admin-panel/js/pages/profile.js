@@ -1,55 +1,35 @@
+require( 'jquery-easyui/css/easyui.css' );
+require( 'jquery-easyui/js/jquery.easyui.min.js' );
+
+import { VsDisplayPassword } from '../includes/password-generator.js';
+import { VsPath } from '../includes/fos_js_routes.js';
+import { VsTranslator, VsLoadTranslations } from '../includes/bazinga_js_translations.js';
+VsLoadTranslations(['VSApplicationBundle']);
+
 $( function()
 {
-	$( '#dialogSelectPayment' ).on( 'show.bs.modal', function ( e )
-	{
-			var price			= e.relatedTarget.dataset.price;
-			var packagePlanId	= e.relatedTarget.dataset.planid;
-			
-			$( e.target ).find( '.price' ).text( price );
-			$( '#packagePlanId' ).val( packagePlanId );
-	});
-
-	$( '.selectPaymentMethod' ).on( 'change', function()
-	{
-        var url		= $(this).attr( 'data-url' );
-        var data	= {
-        	'class':			$(this).val(),
-        	'packagePlanId': 	$( '#packagePlanId' ).val()
-        };
-        
-        $.get( url, data, function( data ) 
-        {
-            $( '#boxPaymentMethodOptions2' ).html( data );
-            
-        }).done(function()
-        {
-            //alert( "SUCCESS!" );
-        })
-        .fail(function()
-        {
-        	$( '#boxPaymentMethodOptions2' ).text( 'ERROR!' );
-        })
-        .always(function()
-        {
-        	$( '#paymentMethodOptions2' ).show();
-        });
-    });
-    
-    $( 'form[name="ia_web_content_thief_project_processors"]' ).on( 'submit', function( e )
+    $( '#btnGeneratePassword' ).on( 'click', function ( e )
     {
         $.ajax({
-            type: $(this).attr('method'),
-            url: $(this).attr('action'),
-            data: $(this).serialize(),
-            success: function (data) {
-                $('#boxProcessorOptions').html(data);
+            type: 'GET',
+            url: VsPath( 'vs_application_json_get_passwords', { 'quantity': 1 } ),
+            success: function ( data )
+            {
+                if ( data['status'] == 'ok' ) {
+                    var password    = data['data']['passwords'][0];
+                    
+                    $( '#change_password_form_password_first' ).val( password );
+                    $( '#change_password_form_password_second' ).val( password );
+                    
+                    var dialog  = VsDisplayPassword( password );
+                } else {
+                    alert( 'ERROR !!!' );
+                }
             }, 
-            error: function(XMLHttpRequest, textStatus, errorThrown) {
-                $('#boxProcessorOptions').html('<p>FATAL ERROR!!!</p>' + $('#boxProcessorOptions').html());
+            error: function( XMLHttpRequest, textStatus, errorThrown )
+            {
+                alert( 'ERROR !!!' );
             }
         });
-        
-        e.preventDefault();
     });
-
 });
