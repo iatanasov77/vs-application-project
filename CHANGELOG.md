@@ -1,3 +1,10 @@
+1.7.11	|	Release date: **19.02.2022**
+============================================
+* New Features and Improvements:
+  - Update AdminPanel Configs.
+  - Add Password Generator For Admin Panel.
+
+
 1.7.10	|	Release date: **14.02.2022**
 ============================================
 * Bug-Fixes:
