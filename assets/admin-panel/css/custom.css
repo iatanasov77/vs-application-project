@@ -92,7 +92,7 @@
  * Override easyui.css
  */
 .panel-header, .panel-body {
-	/* border-width: 0 !important; */
+	border-width: 0 !important;
     overflow: hidden !important;
 }
 
@@ -162,4 +162,8 @@ input[type=file] {
 
 .combobox-item-selected {
     background-color: #ffffff !important;
+}
+
+.profile-data.panel-body {
+	border: 0 !important;
 }
