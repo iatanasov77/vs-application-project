@@ -133,7 +133,7 @@ vs_application:
                         name: Page Categories
                         route: vs_cms_page_categories_index
                     category_create:
-                        name: Create Page Category
+                        name: Create New Page Category
                         route: vs_cms_page_categories_create
                         display: true
                     category_update:
@@ -148,18 +148,31 @@ vs_application:
                 uri: "javascript:;"
                 attributes:
                     iconClass: icon_genius
-                    breadcrumb_route: vs_cms_multipage_toc_index
+                    breadcrumb_route: vs_cms_document_index
                 childs:
                     list:
-                        name: TOC Lists 
-                        route: vs_cms_multipage_toc_index
+                        name: Document Lists 
+                        route: vs_cms_document_index
                     create:
-                        name: Create New TOC
-                        route: vs_cms_multipage_toc_create
+                        name: Create New Document
+                        route: vs_cms_document_create
                         display: true
                     update:
-                        name: Edit TOC
-                        route: vs_cms_multipage_toc_update
+                        name: Edit Document
+                        route: vs_cms_document_update
+                        routeParameters:
+                          id: int
+                        display: false
+                    category_list:
+                        name: Document Categories
+                        route: vs_cms_document_categories_index
+                    category_create:
+                        name: Create New Document Category
+                        route: vs_cms_document_categories_create
+                        display: true
+                    category_update:
+                        name: Edit Document Category
+                        route: vs_cms_document_categories_update
                         routeParameters:
                           id: int
                         display: false

@@ -1,3 +1,14 @@
+1.7.12	|	Release date: **25.02.2022**
+============================================
+* New Features and Improvements:
+  - Improve Admin Panel.
+  - Refactoring Of CMS TOCs.
+  - Add CMS DocumentCategory Entity.
+* Bug-Fixes:
+  - Add Missing Asset For Admin Panel.
+  - Fix FOS CKEditor Config.
+
+
 1.7.11	|	Release date: **19.02.2022**
 ============================================
 * New Features and Improvements:

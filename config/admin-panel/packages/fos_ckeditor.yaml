@@ -3,3 +3,8 @@
 twig:
     form_themes:
         - '@FOSCKEditor/Form/ckeditor_widget.html.twig'
+
+fos_ck_editor:
+    # ...
+    base_path: "build/default/ckeditor"
+    js_path:   "build/default/ckeditor/ckeditor.js"
