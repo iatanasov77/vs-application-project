@@ -6,6 +6,9 @@ vs_cms:
         page_categories:
             classes:
                 model: App\Entity\Cms\PageCategory
+        document_categories:
+            classes:
+                model: App\Entity\Cms\DocumentCategory
         document:
             classes:
                 model: App\Entity\Cms\Document
