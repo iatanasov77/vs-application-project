@@ -18,6 +18,11 @@ Encore
         {from: './node_modules/ckeditor/skins', to: 'ckeditor/skins/[path][name].[ext]'}
     ])
     
+    // CKeditor 4 Extra Plugins
+    .copyFiles([
+        {from: './assets/admin-panel/vendor/ckeditor4_plugins', to: 'ckeditor/plugins/[path][name].[ext]'},
+    ])
+    
     .copyFiles({
          from: './assets/admin-panel/images',
          to: 'images/[path][name].[ext]',
