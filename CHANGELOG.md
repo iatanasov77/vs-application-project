@@ -1,3 +1,12 @@
+1.7.13	|	Release date: **03.03.2022**
+============================================
+* New Features:
+  - Update AdminPanel Assets.
+  - Add CKEditor Lightbox Plugin
+  - Add Composer Command Assets:Install For AdminPanel Application.
+  - Add Configuration Parameters For CkEditor Form Fields in AdminPanel Application.
+
+
 1.7.12	|	Release date: **25.02.2022**
 ============================================
 * New Features and Improvements:
