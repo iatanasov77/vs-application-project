@@ -1,3 +1,10 @@
+1.8.0	|	Release date: **03.03.2022**
+============================================
+* New Features:
+  - Add Fos CKEditor Predefined Toolbars in Configuration.
+  - Update Vankosoft Application Version in Composer.Json
+
+
 1.7.13	|	Release date: **03.03.2022**
 ============================================
 * New Features:
