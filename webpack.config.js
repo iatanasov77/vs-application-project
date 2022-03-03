@@ -18,6 +18,11 @@ Encore
         {from: './node_modules/ckeditor/skins', to: 'ckeditor/skins/[path][name].[ext]'}
     ])
     
+    // CKeditor 4 Extra Plugins
+    .copyFiles([
+        {from: './assets/admin-panel/vendor/ckeditor4_plugins', to: 'ckeditor/plugins/[path][name].[ext]'},
+    ])
+    
     .copyFiles({
          from: './assets/admin-panel/images',
          to: 'images/[path][name].[ext]',
@@ -52,8 +57,8 @@ Encore
     .addEntry( 'js/pages-categories-edit', './assets/admin-panel/js/pages/pages_categories_edit.js' )
     .addEntry( 'js/pages-index', './assets/admin-panel/js/pages/pages-index.js' )
     .addEntry( 'js/pages-edit', './assets/admin-panel/js/pages/pages-edit.js' )
-    .addEntry( 'js/multipage-toc-index', './assets/admin-panel/js/pages/multipage-toc-index.js' )
-    .addEntry( 'js/multipage-toc-update', './assets/admin-panel/js/pages/multipage-toc-update.js' )
+    .addEntry( 'js/documents-index', './assets/admin-panel/js/pages/documents-index.js' )
+    .addEntry( 'js/documents-edit', './assets/admin-panel/js/pages/documents-edit.js' )
     
     .addEntry( 'js/users-index', './assets/admin-panel/js/pages/users-index.js' )
     .addEntry( 'js/users-edit', './assets/admin-panel/js/pages/users-edit.js' )
