@@ -6,6 +6,9 @@ doctrine:
 doctrine_migrations:
     enable_profiler: '%kernel.debug%'
     
+    all_or_nothing: true
+    transactional: true
+    
     migrations_paths:
         'App\DoctrineMigrations': '%kernel.project_dir%/src/DoctrineMigrations'
 
