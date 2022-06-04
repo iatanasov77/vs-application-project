@@ -1,3 +1,12 @@
+1.8.3	|	Release date: **04.06.2022**
+============================================
+* New Features:
+  - Add Configuration For Migrations to execute in trasaction.
+  - Add JqueryDuplicateFields To package.json
+  - Add Issues Doc.
+  - Add Service Parameter.
+
+
 1.8.2	|	Release date: **11.05.2022**
 ============================================
 * New Features:
