@@ -1,3 +1,10 @@
+1.8.4	|	Release date: **05.08.2022**
+============================================
+* New Features:
+  - Add Support for Php 8
+  - Configure Admin Panel Pagination Template.
+
+
 1.8.3	|	Release date: **04.06.2022**
 ============================================
 * New Features:
