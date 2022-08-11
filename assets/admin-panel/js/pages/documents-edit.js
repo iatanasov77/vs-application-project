@@ -19,7 +19,7 @@ $( function()
         opened: 'all',
     });
     
-	$( '.btnTocPage' ).on( 'click', function( e )
+	$( '#containerTocPages' ).on( 'click', '.btnTocPage', function( e )
 	{
 		e.preventDefault();
 		var documentId    = $( this ).attr( 'data-documentId' );
@@ -32,7 +32,13 @@ $( function()
 			{
 				$( '#modalBodyTocPage > div.card-body' ).html( response );
 				$( '#multipageTocPageModal' ).modal( 'toggle' );
-				//$( '#btnEditInstallManual').show();
+				
+                /**
+                 * FIXING THE MODAL/CKEDITOR ISSUE. При мен се случваше само на диалога за Снимка.
+                 * --------------------------------------------------------------------------------------
+                 * https://stackoverflow.com/questions/19570661/ckeditor-plugin-text-fields-not-editable
+                 */
+                $( '#multipageTocPageModal' ).removeAttr( "tabindex" );
 			},
 			error: function()
 			{

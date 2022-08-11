@@ -167,3 +167,7 @@ input[type=file] {
 .profile-data.panel-body {
 	border: 0 !important;
 }
+
+.vsFormButtonsGroup {
+    width: 600px !important;
+}
