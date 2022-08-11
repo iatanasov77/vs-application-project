@@ -1,3 +1,10 @@
+1.8.5	|	Release date: **11.08.2022**
+============================================
+* New Features:
+  - Improve AdminPanel Assets.
+  - Separate Profile Routes from UserManagement Routes.
+
+
 1.8.4	|	Release date: **05.08.2022**
 ============================================
 * New Features:
