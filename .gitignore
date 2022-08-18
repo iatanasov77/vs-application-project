@@ -78,3 +78,9 @@ yarn-error.log
 /public/test-vankosoft-application/media/
 
 ###< VankosoftApplication Files ###
+
+###> VisualParadigm Meta Files ###
+/docs/TechnicalDocumentation/VisualParadigm/.VankosoftApplication.vpp.lck
+/docs/TechnicalDocumentation/VisualParadigm/VankosoftApplication.vpp.bak_*
+###< VisualParadigm Meta Files ###
+
