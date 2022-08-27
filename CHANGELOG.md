@@ -1,3 +1,13 @@
+1.9.0	|	Release date: **27.08.2022**
+============================================
+* New Features:
+  - Update VankosoftLibrary to 1.9
+  - Add Country Flags in Admin Panel Css Styles.
+  - Add VSApplicationBundle Translation Domain Files to be Used for Application Menu Strings Translations.
+* Bug-Fixes:
+  - Improve Gitignore.
+
+
 1.8.5	|	Release date: **11.08.2022**
 ============================================
 * New Features:
