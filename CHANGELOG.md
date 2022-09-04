@@ -1,3 +1,13 @@
+1.9.1	|	Release date: **04.09.2022**
+============================================
+* New Features:
+  - Add Set Locale Action to the Application Default Controller.
+  - Add Language Switcher to the Admin Panel.
+  - Improve AdminPanel Css Styles.
+  - Translate AdminPanel Menu.
+  - Translate Admin Panel Profile Menu.
+
+
 1.9.0	|	Release date: **27.08.2022**
 ============================================
 * New Features:
