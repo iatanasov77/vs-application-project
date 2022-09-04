@@ -94,19 +94,6 @@ vs_application:
                         routeParameters:
                           id: int
                         display: false
-
-#             newsletter:
-#                 name: Newsletter
-#                 uri: "javascript:;"
-#                 attributes:
-#                     iconClass: icon_genius
-#                 childs:
-#                     mailchimp_audiences_list:
-#                         name: List Mailchimp Audiences
-#                         route: vs_users_subscriptions_mailchimp_audiences_index
-#                     mailchimp_audiences_create:
-#                         name: Create New Mailchimp Audience
-#                         route: vs_users_subscriptions_mailchimp_audiences_create
                         
         mainCmsMenu:
             cms:
@@ -213,13 +200,13 @@ vs_application:
         
         profileMenu:
             profile:
-                name: "My Profile"
+                name: vs_application.menu.my_profile
                 route: vs_users_profile_show
                 attributes:
                     iconClass: "fas fa-user mr-2"
                     
             documentation:
-                name: "Documentation"
+                name: vs_application.menu.documentation
                 uri: "javascript:;"
                 attributes:
                     iconClass: "fas fa-cog mr-2"
@@ -242,7 +229,7 @@ vs_application:
                 isDivider: true
             
             logout:
-                name: "Log Out"
+                name: vs_application.menu.logout
                 route: vs_application_logout
                 attributes:
                     iconClass: "fas fa-power-off mr-2"
