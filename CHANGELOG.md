@@ -1,3 +1,9 @@
+1.9.2	|	Release date: **05.09.2022**
+============================================
+* New Features and Improvements:
+  - Admin Panel Set Current Item.
+
+
 1.9.1	|	Release date: **04.09.2022**
 ============================================
 * New Features:
