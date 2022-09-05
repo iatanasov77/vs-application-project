@@ -41,7 +41,13 @@
         "preferred-install": {
             "*": "dist"
         },
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/installers": true,
+            "symfony/flex": true,
+            "oomphinc/composer-installers-extender": true,
+            "symfony/runtime": true
+        }
     },
     "autoload": {
         "psr-4": {
@@ -60,8 +66,9 @@
     },
     "scripts": {
         "auto-scripts": {
-            "assets:install public/admin-panel": "symfony-cmd",
             "cache:clear": "symfony-cmd",
+            "assets:install public/admin-panel": "symfony-cmd",
+            "assets:install %PUBLIC_DIR%": "symfony-cmd",
             "liip:imagine:cache:remove": "symfony-cmd"
         },
         "post-install-cmd": [
