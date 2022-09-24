@@ -175,3 +175,7 @@ input[type=file] {
 .notification-dropdown {
     width: 300px !important;
 }
+
+.custom-file-label.profile-picture {
+    top: 0 !important;
+}
