@@ -1,3 +1,12 @@
+1.9.3	|	Release date: **24.09.2022**
+============================================
+* New Features and Improvements:
+  - AdminPanel Main Menu Scroll To Active Element.
+  - Add Symfony Logging for Admin Panel.
+  - Iprove styling of AdminPanel Profile Page.
+  - Add Services for Dev Environement.
+
+
 1.9.2	|	Release date: **05.09.2022**
 ============================================
 * New Features and Improvements:
