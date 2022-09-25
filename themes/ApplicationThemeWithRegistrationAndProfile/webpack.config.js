@@ -1,8 +1,8 @@
 const Encore = require('@symfony/webpack-encore');
 
 Encore
-    .setOutputPath( 'public/shared_assets/build/application-theme-1/' )
-    .setPublicPath( '/build/application-theme-1/' )
+    .setOutputPath( 'public/shared_assets/build/application-theme-with-registration-and-profile/' )
+    .setPublicPath( '/build/application-theme-with-registration-and-profile/' )
   
     .disableSingleRuntimeChunk()
     .cleanupOutputBeforeBuild()
@@ -24,21 +24,21 @@ Encore
     })
     
     .copyFiles({
-         from: './themes/ApplicationTheme_1/assets/images',
+         from: './themes/ApplicationThemeWithRegistrationAndProfile/assets/images',
          to: 'images/[path][name].[ext]',
      })
     
-    .addStyleEntry( 'css/login', './themes/ApplicationTheme_1/assets/css/login.scss' )
-    .addEntry( 'js/login', './themes/ApplicationTheme_1/assets/js/pages/login.js' )
+    .addStyleEntry( 'css/login', './themes/ApplicationThemeWithRegistrationAndProfile/assets/css/login.scss' )
+    .addEntry( 'js/login', './themes/ApplicationThemeWithRegistrationAndProfile/assets/js/pages/login.js' )
     
-    .addStyleEntry( 'css/app', './themes/ApplicationTheme_1/assets/css/main.scss' )
-    .addEntry( 'js/app', './themes/ApplicationTheme_1/assets/js/app.js' )
-    .addEntry( 'js/authentication', './themes/ApplicationTheme_1/assets/js/pages/authentication.js' )
+    .addStyleEntry( 'css/app', './themes/ApplicationThemeWithRegistrationAndProfile/assets/css/main.scss' )
+    .addEntry( 'js/app', './themes/ApplicationThemeWithRegistrationAndProfile/assets/js/app.js' )
+    .addEntry( 'js/authentication', './themes/ApplicationThemeWithRegistrationAndProfile/assets/js/pages/authentication.js' )
     
-    .addEntry( 'js/home', './themes/ApplicationTheme_1/assets/js/pages/home.js' )
+    .addEntry( 'js/home', './themes/ApplicationThemeWithRegistrationAndProfile/assets/js/pages/home.js' )
     
-    .addEntry( 'js/profile', './themes/ApplicationTheme_1/assets/js/pages/profile.js' )
-    .addEntry( 'js/filemanager-file-upload', './themes/ApplicationTheme_1/assets/js/pages/filemanager-file-upload.js' )
+    .addEntry( 'js/profile', './themes/ApplicationThemeWithRegistrationAndProfile/assets/js/pages/profile.js' )
+    .addEntry( 'js/filemanager-file-upload', './themes/ApplicationThemeWithRegistrationAndProfile/assets/js/pages/filemanager-file-upload.js' )
 ;
 
 const config = Encore.getWebpackConfig();

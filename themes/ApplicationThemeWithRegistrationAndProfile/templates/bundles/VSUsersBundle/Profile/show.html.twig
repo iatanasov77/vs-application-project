@@ -70,13 +70,13 @@
 {# #}
 {% block stylesheets %} 
     {{ parent() }}
-    {{ encore_entry_link_tags( 'js/profile', null, 'ApplicationTheme1' ) }}
+    {{ encore_entry_link_tags( 'js/profile', null, 'ApplicationThemeWithRegistrationAndProfile' ) }}
 {% endblock %}
 
 {% block javascripts %}
 	{{ parent() }}
 	
-    {{ encore_entry_script_tags( 'js/profile', null, 'ApplicationTheme1' ) }}
-    {{ encore_entry_script_tags( 'js/filemanager-file-upload', null, 'ApplicationTheme1' ) }}
+    {{ encore_entry_script_tags( 'js/profile', null, 'ApplicationThemeWithRegistrationAndProfile' ) }}
+    {{ encore_entry_script_tags( 'js/filemanager-file-upload', null, 'ApplicationThemeWithRegistrationAndProfile' ) }}
 {% endblock %}
 

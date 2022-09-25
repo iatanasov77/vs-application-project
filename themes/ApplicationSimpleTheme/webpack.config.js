@@ -1,8 +1,8 @@
 const Encore = require('@symfony/webpack-encore');
 
 Encore
-    .setOutputPath( 'public/shared_assets/build/application-theme-2/' )
-    .setPublicPath( '/build/application-theme-2/' )
+    .setOutputPath( 'public/shared_assets/build/application-simple-theme/' )
+    .setPublicPath( '/build/application-simple-theme/' )
   
     .disableSingleRuntimeChunk()
     .cleanupOutputBeforeBuild()
@@ -24,13 +24,13 @@ Encore
     })
     
     .copyFiles({
-         from: './themes/ApplicationTheme_2/assets/images',
+         from: './themes/ApplicationSimpleTheme/assets/images',
          to: 'images/[path][name].[ext]',
      })
      
-    .addStyleEntry( 'css/login', './themes/ApplicationTheme_2/assets/css/login.css' )
-    .addEntry( 'js/login', './themes/ApplicationTheme_2/assets/js/login.js' )
-    .addEntry( 'js/home', './themes/ApplicationTheme_2/assets/js/pages/home.js' )
+    .addStyleEntry( 'css/login', './themes/ApplicationSimpleTheme/assets/css/login.css' )
+    .addEntry( 'js/login', './themes/ApplicationSimpleTheme/assets/js/login.js' )
+    .addEntry( 'js/home', './themes/ApplicationSimpleTheme/assets/js/pages/home.js' )
 ;
 
 const config = Encore.getWebpackConfig();
