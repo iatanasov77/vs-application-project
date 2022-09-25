@@ -78,7 +78,7 @@ adminPanelConfig.name = 'adminPanel';
  *  Application Theme 1
  */
 Encore.reset();
-const applicationTheme1Config   = require('./themes/ApplicationTheme_1/webpack.config');
+const applicationTheme1Config   = require('./themes/ApplicationThemeWithRegistrationAndProfile/webpack.config');
 
 //=================================================================================================
 
@@ -86,7 +86,7 @@ const applicationTheme1Config   = require('./themes/ApplicationTheme_1/webpack.c
  *  Application Theme 2
  */
 Encore.reset();
-const applicationTheme2Config   = require('./themes/ApplicationTheme_2/webpack.config');
+const applicationTheme2Config   = require('./themes/ApplicationSimpleTheme/webpack.config');
 
 //=================================================================================================
 
