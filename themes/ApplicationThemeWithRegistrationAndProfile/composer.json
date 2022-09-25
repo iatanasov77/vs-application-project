@@ -1,5 +1,5 @@
 {
-    "name": "vankosoft/application-theme-1",
+    "name": "vankosoft/application-with-registration-and-profile",
     "authors": [
         {
             "name": "Ivan Atanasov",
@@ -8,7 +8,7 @@
     ],
     "extra": {
         "sylius-theme": {
-            "title": "Application Theme 1"
+            "title": "Application Theme With Registration And Profile"
         }
     }
 }

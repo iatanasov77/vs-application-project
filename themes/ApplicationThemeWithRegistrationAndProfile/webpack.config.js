@@ -33,8 +33,12 @@ Encore
     
     .addStyleEntry( 'css/app', './themes/ApplicationTheme_1/assets/css/main.scss' )
     .addEntry( 'js/app', './themes/ApplicationTheme_1/assets/js/app.js' )
+    .addEntry( 'js/authentication', './themes/ApplicationTheme_1/assets/js/pages/authentication.js' )
     
     .addEntry( 'js/home', './themes/ApplicationTheme_1/assets/js/pages/home.js' )
+    
+    .addEntry( 'js/profile', './themes/ApplicationTheme_1/assets/js/pages/profile.js' )
+    .addEntry( 'js/filemanager-file-upload', './themes/ApplicationTheme_1/assets/js/pages/filemanager-file-upload.js' )
 ;
 
 const config = Encore.getWebpackConfig();

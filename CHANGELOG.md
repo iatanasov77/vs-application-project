@@ -1,3 +1,10 @@
+1.9.4	|	Release date: **25.09.2022**
+============================================
+* New Features:
+  - Update Fos JS Routes.
+  - Update Application Example Themes.
+
+
 1.9.3	|	Release date: **24.09.2022**
 ============================================
 * New Features and Improvements:
