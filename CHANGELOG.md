@@ -1,3 +1,11 @@
+1.9.5	|	Release date: **25.09.2022**
+============================================
+* New Features:
+  - Add Deployment Configs.
+* Bug-Fixes:
+  - Fix Themes Webpack Config Names.
+
+
 1.9.4	|	Release date: **25.09.2022**
 ============================================
 * New Features:
