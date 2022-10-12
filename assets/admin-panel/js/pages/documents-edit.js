@@ -12,11 +12,13 @@ $( function()
 {
     $( '#tblTocPages' ).simpleTreeTable({
         expander: $( '#expander' ),
-        collapser: $( '#collapser' )
+        collapser: $( '#collapser' ),
+        opened: []
     });
     
     $( '#collapsed' ).simpleTreeTable({
-        opened: 'all',
+        //opened: 'all',
+        opened: []
     });
     
 	$( '#containerTocPages' ).on( 'click', '.btnTocPage', function( e )

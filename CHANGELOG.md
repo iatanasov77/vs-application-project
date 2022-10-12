@@ -1,3 +1,16 @@
+1.9.6	|	Release date: **12.10.2022**
+============================================
+* New Features:
+  - Add Using Mailcather in Dev Environment.
+  - Add TocPages Sortable Script.
+  - Add CkEditor SimpleBox Plugin.
+  - Add Document TocPages Reordiring Script.
+* Bug-Fixes and Improvenebts:
+  - Fix AdminPanel menu.js
+  - Improve Admin Panel Configs.
+  - Set TocPages Tree Table Collapsed.
+
+
 1.9.5	|	Release date: **25.09.2022**
 ============================================
 * New Features:
