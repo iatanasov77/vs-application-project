@@ -207,9 +207,10 @@ vs_application:
                     
             documentation:
                 name: vs_application.menu.documentation
-                uri: "javascript:;"
+                uri: "http://vankosoft.org/projects/vankosoft-application-project/documentation"
                 attributes:
                     iconClass: "fas fa-cog mr-2"
+                    target: '_blank'
                     
 #            language:
 #                name: "Language"
