@@ -213,19 +213,25 @@ vs_application:
                     iconClass: "fas fa-cog mr-2"
                     target: '_blank'
                     
-#            language:
-#                name: "Language"
-#                uri: "javascript:;"
-#                attributes:
-#                    iconClass: "fas fa-language mr-2"
-#                childs:
-#                    language_english:
-#                        name: "English (US)"
-#                        uri: /set_lang/en_US
-#                        
-#                    language_bulgarian:
-#                        name: "Bulgarian"
-#                        uri: /set_lang/bg_BG
+            language:
+                name: "Language"
+                uri: "javascript:;"
+                attributes:
+                    id: language
+                    iconClass: "fas fa-language mr-2"
+                    target: '_self'
+                childs:
+                    language_english:
+                        name: "English (US)"
+                        uri: /set_locale/en_US
+                        attributes:
+                            locale: en_US
+                        
+                    language_bulgarian:
+                        name: "Bulgarian"
+                        uri: /set_locale/bg_BG
+                        attributes:
+                            locale: bg_BG
                         
             divider_1:
                 isDivider: true
