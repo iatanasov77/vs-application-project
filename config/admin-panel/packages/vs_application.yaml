@@ -41,6 +41,9 @@ vs_application:
                 attributes:
                     iconClass: icon_genius
                 childs:
+                    locales:
+                        name: vs_application.menu.available_locales
+                        route: vs_application_locale_index
                     settings:
                         name: vs_application.menu.preferences
                         route: vs_application_settings_index
@@ -214,24 +217,12 @@ vs_application:
                     target: '_blank'
                     
             language:
-                name: "Language"
+                name: vs_application.menu.language
                 uri: "javascript:;"
                 attributes:
                     id: language
                     iconClass: "fas fa-language mr-2"
                     target: '_self'
-                childs:
-                    language_english:
-                        name: "English (US)"
-                        uri: /set_locale/en_US
-                        attributes:
-                            locale: en_US
-                        
-                    language_bulgarian:
-                        name: "Bulgarian"
-                        uri: /set_locale/bg_BG
-                        attributes:
-                            locale: bg_BG
                         
             divider_1:
                 isDivider: true
