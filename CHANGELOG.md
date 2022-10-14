@@ -1,3 +1,11 @@
+1.9.7	|	Release date: **14.10.2022**
+============================================
+* New Features:
+  - Add Documentation Link into AdminPanel Profile Menu
+  - Improve AdminPanel Profile Menu.
+  - Add Languages SubMenu at Admin Panel Profile Menu.
+
+
 1.9.6	|	Release date: **12.10.2022**
 ============================================
 * New Features:
