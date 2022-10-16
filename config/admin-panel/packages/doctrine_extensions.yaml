@@ -9,6 +9,12 @@ stof_doctrine_extensions:
             tree:           true
             translatable:   true
             loggable:       true
+            
+            # Cannot Use Sortable Listener Because The System Search table 'ext_translations'
+            # For Now Set Default Value for 'position' column
+            #######################################################################################
+            #sortable:       true
+            
             #blameable:      false
             #uploadable:     false
     class:
