@@ -20,6 +20,7 @@ services:
             - '@vs_cms.file_path_generator'
     
     # Create a Custom Uploader extending Vankosoft\CmsBundle\Component\Uploader\FilemanagerUploader
+    # Add Needed Configurations in packages/knp_gaufrette.yaml
     ##################################################################################################
 #    vs_application.custom_uploader:
 #        class: App\Component\Uploader\GamePictureUploader
