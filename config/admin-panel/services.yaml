@@ -12,12 +12,6 @@ imports:
 parameters:
     lang: 'en'
     locale: 'en_US'
-    languages:
-        en: English
-        bg: Български¸
-    language_flags:
-        en: us
-        bg: bg
     applicationTitle: 'SuperAdmin Panel'
     
     vs_application.version: !php/const App\AdminPanelKernel::VERSION

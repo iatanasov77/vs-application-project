@@ -10,8 +10,6 @@ twig:
         webSiteUrl: "http://website.url"
         installedBundles: '%kernel.bundles%'
         pageCategoriesTaxonomyCode: '%vs_application.page_categories.taxonomy_code%'
-        
-        languageFlags: '%language_flags%'
         localesRepo: '@vs_application.repository.locale'
         
     form_themes:
