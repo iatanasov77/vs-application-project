@@ -1,3 +1,15 @@
+1.9.8	|	Release date: **27.10.2022**
+============================================
+* New Features:
+  - Add Application Picture Uploader Service.
+  - Add To Gedmo Extensions Configuration
+  - Improve Example Themes Lyouts.
+  - Update FontAwesome Version to 6
+  - Allow Deployment of file VERSION.
+  - Add a JWT Api Firewall in AdminPanel Security Configuration.
+  - Update API AdminPanel Routes Configuration.
+
+
 1.9.7	|	Release date: **14.10.2022**
 ============================================
 * New Features:

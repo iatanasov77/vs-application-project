@@ -18,25 +18,48 @@ security:
             entity:
                 class: App\Entity\UserManagement\User
                 property: username
-        admin_provider:
+        api_provider:
             entity:
                 class: App\Entity\UserManagement\User
                 property: username
 
+    # activate different ways to authenticate
+    # https://symfony.com/doc/current/security.html#firewalls-authentication
+
+    # https://symfony.com/doc/current/security/impersonating_user.html
+    # switch_user: true
     firewalls:
         dev:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
+            
+        # API Firewall
+        ###############
+        # Manual: https://symfony.com/bundles/LexikJWTAuthenticationBundle/current/index.html
+        # NOTE: API Firewall Configuration Should Be Before Main Firewall
+        #       You can Remove apiToken field from User Model in Library.
+        #       It not needed. JWT Provide Best API Authentication Solution
+        ################################################################################################
+        api_login:
+            pattern: ^/api/login
+            stateless: true
+            provider: api_provider
+            json_login:
+                check_path: /api/login_check
+                success_handler: lexik_jwt_authentication.handler.authentication_success
+                failure_handler: lexik_jwt_authentication.handler.authentication_failure
+
+        api_main:
+            pattern:   ^/api
+            stateless: true
+            provider: api_provider
+            jwt: ~
+        ################################################################################################
+        
         main:
             lazy: true
             #provider: debug_provider
             provider: default_provider
-            
-            # activate different ways to authenticate
-            # https://symfony.com/doc/current/security.html#firewalls-authentication
-
-            # https://symfony.com/doc/current/security/impersonating_user.html
-            # switch_user: true
             
             form_login:
                 enable_csrf: true
@@ -66,6 +89,9 @@ security:
     access_control:
         - { path: /_wdt/.*, roles: PUBLIC_ACCESS }
         - { path: /_profiler/.*, roles: PUBLIC_ACCESS }
+        
+        - { path: ^/api/login, roles: PUBLIC_ACCESS }
+        - { path: ^/api,       roles: IS_AUTHENTICATED_FULLY }
         
         - { path: ^/login, roles: PUBLIC_ACCESS }
         - { path: ^/register, roles: PUBLIC_ACCESS }

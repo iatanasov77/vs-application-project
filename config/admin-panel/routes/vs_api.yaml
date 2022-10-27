@@ -1,0 +1,10 @@
+vs_api_users:
+    resource: "@VSUsersBundle/Resources/config/routing/api.yaml"
+    prefix:   /
+
+vs_api_application:
+    resource: "@VSApplicationBundle/Resources/config/routing/api.yaml"
+    prefix:   /
+    options:
+        expose: true
+
