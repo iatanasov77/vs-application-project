@@ -1,0 +1,6 @@
+vs_api:
+    resource: "@VSApplicationBundle/Resources/config/routing/api.yaml"
+    prefix:   /
+    options:
+        expose: true
+
