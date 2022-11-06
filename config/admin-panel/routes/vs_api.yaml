@@ -8,3 +8,8 @@ vs_api_application:
     options:
         expose: true
 
+vs_api_test_index:
+    path: /api/test-index
+    controller: App\Controller\Api\TestController::index
+
+
