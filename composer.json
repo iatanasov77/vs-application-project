@@ -14,7 +14,7 @@
         }
     ],
     "require": {
-        "php": "^7.2|^8.0",
+        "php": "^7.4|^8.0",
         "ext-ctype": "*",
         "ext-iconv": "*",
         
@@ -67,8 +67,6 @@
     "scripts": {
         "auto-scripts": {
             "cache:clear": "symfony-cmd",
-            "assets:install public/admin-panel": "symfony-cmd",
-            "assets:install %PUBLIC_DIR%": "symfony-cmd",
             "liip:imagine:cache:remove": "symfony-cmd"
         },
         "post-install-cmd": [

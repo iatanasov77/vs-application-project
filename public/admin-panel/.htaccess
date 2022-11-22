@@ -14,3 +14,14 @@
         RedirectMatch 302 ^/$ /index.php/
     </IfModule>
 </IfModule>
+
+#######################################################################
+# If You Need Cross-Origin Resource Sharing (CORS)
+# For Access API Routes outside of this domain, Uncomment Bellow
+#######################################################################
+#<IfModule mod_headers.c>
+#    Header set Access-Control-Allow-Origin "*"
+#    Header set Access-Control-Allow-Credentials true
+#    Header set Access-Control-Allow-Headers X-AUTH-TOKEN
+#    Header set Access-Control-Allow-Methods "GET,PUT,POST,DELETE"
+#</IfModule>
