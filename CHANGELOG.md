@@ -1,3 +1,16 @@
+1.9.9	|	Release date: **22.11.2022**
+============================================
+* Bug-Fixes and Improvements:
+  - Add to AdminPanel .htaccess
+  - Remove Service Parameters For Languages. We Already use Locale Entities.
+  - Add Configuration For Sylius Resources Settings.
+  - Add Controller Namespace for Api Actions. Create a TestController for API.
+  - Move All API Functionality in Separate Bundle.
+  - Add Directories for Api Platform Custom Resources.
+  - Update composer.json and Remove assets:install commands because its not needed. This Project use WebpackEncore.
+  - Fix Assets For TocPage Edit Modal.
+
+
 1.9.8	|	Release date: **27.10.2022**
 ============================================
 * New Features:
