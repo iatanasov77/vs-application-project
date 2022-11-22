@@ -48,6 +48,7 @@
 	"resolutions": {
     	"@kanety/jquery-simple-tree-table/jquery": "3.4.1",
         "jquery-ui/jquery": "3.4.1",
-        "jquery-ui-dist/jquery": "3.4.1"
+        "jquery-ui-dist/jquery": "3.4.1",
+        "jquery-slimscroll/jquery": "3.4.1"
 	}
 }
