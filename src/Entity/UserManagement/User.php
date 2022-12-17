@@ -12,7 +12,7 @@ class User extends BaseUser
     /**
      * {@inheritDoc}
      */
-    public function getRoles()
+    public function getRoles(): array
     {
         /* Use RolesArray ( OLD WAY )*/
         //return $this->getRolesFromArray();
