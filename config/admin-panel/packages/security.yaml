@@ -33,27 +33,27 @@ security:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
             
-        # API Firewall
-        ###############
+        # API Firewall - Uncomment to Use API Firewalls
+        ################################################################################################
         # Manual: https://symfony.com/bundles/LexikJWTAuthenticationBundle/current/index.html
         # NOTE: API Firewall Configuration Should Be Before Main Firewall
         #       You can Remove apiToken field from User Model in Library.
         #       It not needed. JWT Provide Best API Authentication Solution
         ################################################################################################
-        api_login:
-            pattern: ^/api/login
-            stateless: true
-            provider: api_provider
-            json_login:
-                check_path: /api/login_check
-                success_handler: lexik_jwt_authentication.handler.authentication_success
-                failure_handler: lexik_jwt_authentication.handler.authentication_failure
-
-        api_main:
-            pattern:   ^/api
-            stateless: true
-            provider: api_provider
-            #jwt: ~
+#        api_login:
+#            pattern: ^/api/login
+#            stateless: true
+#            provider: api_provider
+#            json_login:
+#                check_path: /api/login_check
+#                success_handler: lexik_jwt_authentication.handler.authentication_success
+#                failure_handler: lexik_jwt_authentication.handler.authentication_failure
+#
+#        api_main:
+#            pattern:   ^/api
+#            stateless: true
+#            provider: api_provider
+#            jwt: ~
         ################################################################################################
         
         main:
