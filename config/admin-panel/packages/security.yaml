@@ -53,7 +53,7 @@ security:
             pattern:   ^/api
             stateless: true
             provider: api_provider
-            jwt: ~
+            #jwt: ~
         ################################################################################################
         
         main:
