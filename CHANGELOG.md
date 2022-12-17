@@ -1,3 +1,14 @@
+1.10.0	|	Release date: **17.12.2022**
+============================================
+* New Features and Improvements:
+  - Improve Gitignore.
+  - Improve Security Config.
+  - Improve Profile Page Assets.
+  - Set file name in profile picture file input.
+  - Remove Sensio Framework Extra Bundle , Because it's Abandoned.
+  - Upgrade to PHP 8, Symfony 6.2 and Sylius Resource Bundle 1.10
+
+
 1.9.9	|	Release date: **22.11.2022**
 ============================================
 * Bug-Fixes and Improvements:
