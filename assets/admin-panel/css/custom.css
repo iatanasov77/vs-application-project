@@ -178,4 +178,5 @@ input[type=file] {
 
 .custom-file-label.profile-picture {
     top: 0 !important;
+    color: inherit !important;
 }

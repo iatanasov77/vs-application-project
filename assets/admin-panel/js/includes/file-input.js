@@ -1,4 +1,4 @@
-function setUploadFile( jqueryObject )
+export function getFileName( jqueryObject )
 {
     var fileName  = jqueryObject.val();
         
@@ -6,6 +6,13 @@ function setUploadFile( jqueryObject )
     var baseFileWindows = fileName.split(/[\\\/]/).pop();
     //alert( "Unix File: " + baseFileUnix );
     //alert( "Windows File: " + baseFileWindows );
+    
+    return baseFileUnix;
+}
+
+export function setUploadFile( jqueryObject )
+{
+    var baseFileUnix    = getFileName( jqueryObject );
 
     // Maybe Unix File Split Work and for Windows Too
     jqueryObject.next( '.form-control-file' ).addClass( "selected" ).html( baseFileUnix );
@@ -23,6 +30,3 @@ $( function()
     })
 });
 
-module.exports = {
-    setUploadFile
-};

@@ -40,7 +40,7 @@
 /assets/styles/
 /assets/app.js
 /assets/bootstrap.js
-/assests/controllers.json
+/assets/controllers.json
 /node_modules/
 /public/build/
 /public/bundles/
@@ -68,6 +68,9 @@ yarn-error.log
 /public/admin-panel/bundles/
 /public/admin-panel/media/
 /public/shared_assets/build/
+/public/index.php
+/src/Kernel.php
+/templates/base.html.twig
 
 # Except for the applications configs:
 !/config/admin-panel

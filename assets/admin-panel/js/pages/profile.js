@@ -1,5 +1,7 @@
+/*
 require( 'jquery-easyui/css/easyui.css' );
 require( 'jquery-easyui/js/jquery.easyui.min.js' );
+*/
 
 import { VsDisplayPassword } from '../includes/password-generator.js';
 import { VsPath } from '../includes/fos_js_routes.js';
