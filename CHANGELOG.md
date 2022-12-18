@@ -1,3 +1,11 @@
+1.10.1	|	Release date: **18.12.2022**
+============================================
+* Bug-Fixes:
+  - Remove Security firewall option because is invalid in symfony 6.2
+  - Fix User Entity.
+  - Comment API Firewalls . :)
+
+
 1.10.0	|	Release date: **17.12.2022**
 ============================================
 * New Features and Improvements:
