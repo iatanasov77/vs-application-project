@@ -1,3 +1,10 @@
+1.10.2	|	Release date: **30.12.2022**
+============================================
+* Bug-Fixes and Improvement:
+  - Fix Application/DebugController
+  - Improve and Upgrade Admin Panel Assets.
+
+
 1.10.1	|	Release date: **18.12.2022**
 ============================================
 * Bug-Fixes:
