@@ -6,6 +6,8 @@
 /config/secrets/prod/prod.decrypt.private.php
 /vendor/
 /node_modules/
+/[all
+/symfony.lock
 ###< symfony/framework-bundle ###
 
 ###> symfony/phpunit-bridge ###
@@ -44,6 +46,7 @@
 /node_modules/
 /public/build/
 /public/bundles/
+/yarn.lock
 npm-debug.log
 yarn-error.log
 ###< symfony/webpack-encore-bundle ###
