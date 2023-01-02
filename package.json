@@ -26,6 +26,7 @@
         "jquery-ui-dist": "^1.12.1",
         "jquery.nicescroll": "^3.7.6",
         "mdb-ui-kit": "^3.6.0",
+        "moment": "^2.29.1",
         "popper": "^1.0.1",
         "popper.js": "^1.15.0",
         

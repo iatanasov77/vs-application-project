@@ -8,6 +8,10 @@
 /node_modules/
 /[all
 /symfony.lock
+/migrations/
+/public/index.php
+/src/Kernel.php
+/templates/base.html.twig
 ###< symfony/framework-bundle ###
 
 ###> symfony/phpunit-bridge ###
