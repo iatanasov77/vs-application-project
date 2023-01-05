@@ -1,3 +1,11 @@
+1.10.3	|	Release date: **05.01.2023**
+============================================
+* New Features and Improvements:
+  - Update .gitignore
+  - Improvements
+  - Move AdminPanel Assests to Application Bundle.
+
+
 1.10.2	|	Release date: **30.12.2022**
 ============================================
 * Bug-Fixes and Improvement:
