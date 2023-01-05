@@ -11,7 +11,7 @@
         "@fortawesome/fontawesome-free": "^6.1.0",
         "@kanety/jquery-simple-tree-table": "^0.5.0",
         "@popperjs/core": "^2.10.1",
-        "bootstrap": "^4.3.1",
+        "bootstrap": "^5.2.3",
         "bootstrap-gtreetable": "https://github.com/iatanasov77/bootstrap-gtreetable.git",
         "bootstrap-sass": "^3.4.1",
         "bootstrap4-tagsinput-douglasanpa": "^4.1.2",
