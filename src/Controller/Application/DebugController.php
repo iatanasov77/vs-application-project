@@ -7,13 +7,6 @@ use Psr\Container\ContainerInterface;
 
 class DebugController extends AbstractController
 {
-    protected $container;
-    
-    public function __construct( ContainerInterface $container )
-    {
-        $this->container    = $container;
-    }
-    
     public function debugSession( Request $request ): Response
     {
         $session    = $this->container->get( 'session' );
