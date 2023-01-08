@@ -7,6 +7,4 @@ services:
         tags: ['controller.service_arguments']
 
     App\Controller\Application\DebugController:
-        arguments:
-            - '@service_container'
         tags: ['controller.service_arguments']

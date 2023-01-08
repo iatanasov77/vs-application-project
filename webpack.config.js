@@ -25,4 +25,8 @@ const applicationTheme2Config   = require('./themes/ApplicationSimpleTheme/webpa
 //=================================================================================================
 
 
-module.exports = [adminPanelConfig, applicationTheme1Config, applicationTheme2Config];
+module.exports = [
+    adminPanelConfig,
+    applicationTheme1Config,
+    applicationTheme2Config
+];
