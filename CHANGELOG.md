@@ -1,3 +1,13 @@
+1.10.4	|	Release date: **08.01.2023**
+============================================
+* Bug-Fixes and Improvements:
+  - Remove GtreTable From package.json
+  - Fix Some Deprecations.
+  - Improve Webpack Config.
+  - Change Version Requirement of @popperjs/core
+  - Improve Jenkinsfile
+
+
 1.10.3	|	Release date: **05.01.2023**
 ============================================
 * New Features and Improvements:
