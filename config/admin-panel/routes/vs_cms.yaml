@@ -21,3 +21,9 @@ vs_cms_filemanager:
 artgris_filemanager:
     resource: "@ArtgrisFileManagerBundle/Resources/config/routing.yml"
     prefix: /artgris_filemanager
+    
+oneup_uploader:
+    resource: .
+    type: uploader
+
+

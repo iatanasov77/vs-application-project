@@ -1,3 +1,12 @@
+1.10.5	|	Release date: **29.01.2023**
+============================================
+* New Features:
+  - Add Configurations For OneUp Uploader in AdminPanel.
+* Bug-Fixes:
+  - Change 'node-sass' with 'sass' in package.json
+  - Correct NPM Package from ckeditor to ckeditor4
+
+
 1.10.4	|	Release date: **08.01.2023**
 ============================================
 * Bug-Fixes and Improvements:
