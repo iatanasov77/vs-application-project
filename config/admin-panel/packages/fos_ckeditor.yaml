@@ -8,6 +8,15 @@ fos_ck_editor:
     base_path: "build/default/ckeditor"
     js_path:   "build/default/ckeditor/ckeditor.js"
 
+    # Add Custom CSS Classes to Can Add With 'ckeditor_add_class' Plugin
+    configs:
+        my_config:
+            stylesSet:
+                - { name: "My Lightbox Style", element: "a", attributes: { class: "lightbox" }}
+    styles:
+        my_lightbox:
+            - { name: "My Lightbox Style", element: "img", attributes: { class: "lightbox" }}
+            
     toolbars:
         configs:
             document_toolbar: ["@document", "|", "@basicstyles", "|", "@links", "|", "@lists"]
@@ -23,8 +32,8 @@ fos_ck_editor:
             justify: ['JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock']
             document: ['Source', 'Save', 'NewPage']
             lists: ['NumberedList', 'BulletedList']
-            links: ['Link', 'Unlink','Image', 'lightbox', 'simplebox']
-            dev_tools: [ 'CodeSnippet', 'Indent', 'Outdent' ]
+            links: ['Link', 'Unlink','Image', 'lightbox', 'ckeditor_add_class']
+            dev_tools: [ 'Simplebox', 'Simplebox-2', 'CodeSnippet', 'Indent', 'Outdent' ]
             
     plugins:
         codesnippet:
@@ -32,5 +41,11 @@ fos_ck_editor:
             filename: "plugin.js"
         simplebox:
             path:     "/build/default/ckeditor/plugins/simplebox/" # with trailing slash
+            filename: "plugin.js"
+        lightbox:
+            path:     "/build/default/ckeditor/plugins/lightbox/" # with trailing slash
+            filename: "plugin.js"
+        ckeditor_add_class:
+            path:     "/build/default/ckeditor/plugins/ckeditor_add_class/" # with trailing slash
             filename: "plugin.js"
 
