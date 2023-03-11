@@ -1,3 +1,12 @@
+1.10.6	|	Release date: **11.03.2023**
+============================================
+* Bug-Fixes and Improvements:
+  - Add 'blueimp-file-upload' to package.json
+  - Fix And Improve FosCkEditor Config.
+  - Add OneUp Flysystem Bundle to Admin Panel Configs.
+  - Improve Themes.
+
+
 1.10.5	|	Release date: **29.01.2023**
 ============================================
 * New Features:
