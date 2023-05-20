@@ -1,3 +1,12 @@
+1.10.7	|	Release date: **20.05.2023**
+============================================
+* New Features:
+  - Add Contact Page Link Into Profile Menu.
+  - Add RememberMe Configuration.
+  - Update Jenkinsfile.
+  - Add in AdminPanel Twig Globals
+
+
 1.10.6	|	Release date: **11.03.2023**
 ============================================
 * Bug-Fixes and Improvements:
