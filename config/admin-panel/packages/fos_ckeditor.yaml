@@ -11,6 +11,7 @@ fos_ck_editor:
     # Add Custom CSS Classes to Can Add With 'ckeditor_add_class' Plugin
     configs:
         my_config:
+            magicline_everywhere: true
             stylesSet:
                 - { name: "My Lightbox Style", element: "a", attributes: { class: "lightbox" }}
     styles:
