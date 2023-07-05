@@ -1,3 +1,13 @@
+1.10.8	|	Release date: **05.07.2023**
+============================================
+* New Features and Improvements:
+  - FOS CK Editor Magicline Everywhere.
+  - Add to .gitignore
+  - Fix a Config File Identations.
+  - Improve FtpDeploy Template.
+  - Gitignore Liipimagine Cache Files.
+
+
 1.10.7	|	Release date: **20.05.2023**
 ============================================
 * New Features:

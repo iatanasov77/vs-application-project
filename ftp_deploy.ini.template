@@ -84,6 +84,10 @@ include = "
     /themes/DeveloperBlog/composer.json
     /themes/DeveloperWebsite/composer.json
     /VERSION
+    !docs
+    !docs/*
+    !tests
+    !tests/*
 "
 
 ; is allowed to delete remote files? (defaults to yes)
