@@ -56,12 +56,6 @@ npm-debug.log
 yarn-error.log
 ###< symfony/webpack-encore-bundle ###
 
-###> liip/imagine-bundle ###
-/public/media/cache/
-/public/web-guitar-pro/media/cache/
-###< liip/imagine-bundle ###
-
-
 ###> Jenkins Deploy Files ###
 /.env
 /ftp_deploy.ini
@@ -74,7 +68,6 @@ yarn-error.log
 # Public files ignores
 /public/admin-panel/build/
 /public/admin-panel/bundles/
-/public/admin-panel/media/
 /public/shared_assets/build/
 /public/index.php
 /src/Kernel.php
@@ -88,7 +81,6 @@ yarn-error.log
 # Example Application ignores
 /public/test-vankosoft-application/build/
 /public/test-vankosoft-application/bundles/
-/public/test-vankosoft-application/media/
 
 ###< VankosoftApplication Files ###
 
