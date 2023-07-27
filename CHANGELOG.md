@@ -1,3 +1,9 @@
+1.10.9	|	Release date: **27.07.2023**
+============================================
+* New Features and Improvements:
+  - Improve CkEditor Toolbars.
+
+
 1.10.8	|	Release date: **05.07.2023**
 ============================================
 * New Features and Improvements:
