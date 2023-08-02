@@ -1,3 +1,10 @@
+1.10.10	|	Release date: **02.08.2023**
+============================================
+* New Features and Improvement:
+  - Update Gitignore .
+  - Improve Admin Panel Security Configuration.
+
+
 1.10.9	|	Release date: **27.07.2023**
 ============================================
 * New Features and Improvements:
