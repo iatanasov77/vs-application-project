@@ -40,6 +40,7 @@ vs_application:
                 uri: "javascript:;"
                 attributes:
                     iconClass: icon_genius
+                    breadcrumb_route: vs_application_settings_index
                 childs:
                     locales:
                         name: vs_application.menu.available_locales
@@ -52,6 +53,7 @@ vs_application:
                 uri: "javascript:;"
                 attributes:
                     iconClass: icon_genius
+                    breadcrumb_route: vs_application_taxonomy_index
                 childs:
                     list:
                         name: vs_application.menu.list_taxonomies
@@ -71,6 +73,7 @@ vs_application:
                 uri: "javascript:;"
                 attributes:
                     iconClass: icon_genius
+                    breadcrumb_route: vs_users_users_index
                 childs:
                     users_list:
                         name: vs_application.menu.users_list
@@ -104,6 +107,7 @@ vs_application:
                 uri: "javascript:;"
                 attributes:
                     iconClass: icon_genius
+                    breadcrumb_route: vs_cms_pages_index
                 childs:
                     list:
                         name: vs_application.menu.list_pages
@@ -171,6 +175,7 @@ vs_application:
                 uri: "javascript:;"
                 attributes:
                     iconClass: icon_genius
+                    breadcrumb_route: vs_cms_file_manager_index
                 childs:
                     list_filemanagers:
                         name: vs_application.menu.list_filemanagers
@@ -192,6 +197,7 @@ vs_application:
                 uri: "javascript:;"
                 attributes:
                     iconClass: icon_genius
+                    breadcrumb_route: vs_cms_filemanager_artgris_list
                 childs:
                     browse:
                         name: vs_application.menu.browse_files
