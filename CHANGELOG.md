@@ -1,3 +1,9 @@
+1.10.12	|	Release date: **05.09.2023**
+============================================
+* Bug-Fixes:
+  - Fix Service Parameter 'locale'.
+
+
 1.10.11	|	Release date: **05.09.2023**
 ============================================
 * New Features and Improvements:
