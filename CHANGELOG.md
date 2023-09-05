@@ -1,3 +1,12 @@
+1.10.11	|	Release date: **05.09.2023**
+============================================
+* New Features and Improvements:
+  - Improve Localization Configs.
+  - Remove ENV Variable 'LANGUAGES'.
+  - Some AdminPanel Configuration Improvements.
+  - Create CookieConsentTranslation Resource and Use It.
+
+
 1.10.10	|	Release date: **02.08.2023**
 ============================================
 * New Features and Improvement:
