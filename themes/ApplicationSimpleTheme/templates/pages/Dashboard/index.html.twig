@@ -1,9 +1,5 @@
 {% extends "base.html.twig" %}
 
-{% block javascripts %}
-	{{ encore_entry_script_tags( 'js/home', null, 'ApplicationSimpleTheme' ) }}
-{% endblock %}
-
 {% block content %}    
     <section class="ftco-section">
         <div class="container">
@@ -26,4 +22,10 @@
             </div>
         </div>
     </section>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    
+    {{ encore_entry_script_tags( 'js/home', null, 'ApplicationSimpleTheme' ) }}
 {% endblock %}
