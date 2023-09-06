@@ -1,3 +1,9 @@
+1.10.13	|	Release date: **06.09.2023**
+============================================
+* Bug-Fixes:
+  - Fix Installer Setup Admin Panel  Locale Configuration.
+
+
 1.10.12	|	Release date: **05.09.2023**
 ============================================
 * Bug-Fixes:
