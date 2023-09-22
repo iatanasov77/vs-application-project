@@ -1,3 +1,14 @@
+1.10.15	|	Release date: **22.09.2023**
+============================================
+* New Features and Improvements:
+  - Update Package Json.
+  - Update FosJs AdminPanel Routes.
+  - Remove Using ENV Variable API_TOKEN_DOMAIN.
+  - Add Using ENV Variable SECURE_SCHEME.
+  - CKEditor 4.22.1 was the last version of CKEditor 4 available under the open source license terms.
+  - Add TagsWhitelist Resources.
+
+
 1.10.14	|	Release date: **06.09.2023**
 ============================================
 * Bug-Fixes:
