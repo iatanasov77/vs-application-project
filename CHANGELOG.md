@@ -1,3 +1,9 @@
+1.10.16	|	Release date: **07.10.2023**
+============================================
+* New Features and Improvements:
+  - Some Additions and Remove SPEFilesizeExtensionBundle .
+
+
 1.10.15	|	Release date: **22.09.2023**
 ============================================
 * New Features and Improvements:

@@ -28,6 +28,7 @@
         "moment": "^2.29.1",
         "popper": "^1.0.1",
         "popper.js": "^1.15.0",
+        "velocity-animate": "^1.5.2",
         
         "jquery-ui": "^1.13.0",
         "bazinga-translator": "^5.0.0",
