@@ -1,3 +1,11 @@
+1.10.17	|	Release date: **23.10.2023**
+============================================
+* New Features and Improvements:
+  - Update Paths of CMS Routes.
+  - Add Application Icon in Service Parameters.
+  - Add Service Parameter and Twig Globals.
+
+
 1.10.16	|	Release date: **07.10.2023**
 ============================================
 * New Features and Improvements:
