@@ -52,4 +52,6 @@ return [
     
     Oneup\UploaderBundle\OneupUploaderBundle::class => ['all' => true],
     Oneup\FlysystemBundle\OneupFlysystemBundle::class => ['all' => true],
+    
+    Symfony\UX\TogglePassword\TogglePasswordBundle::class => ['all' => true],
 ];
