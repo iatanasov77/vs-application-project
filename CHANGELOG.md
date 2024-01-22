@@ -1,3 +1,18 @@
+1.10.18	|	Release date: **22.01.2024**
+============================================
+* New Features and Improvements:
+  - Improve Security Config.
+  - Update Default Service Parameters.
+  - Update package.json
+  - Add to Twig Globals.
+  - Use Widgets Insteadof Global Twig Variables for Layout Objects.
+  - Add Some Improvements.
+  - Improve and Additions to Some Configs.
+  - Improve Phing Build Config.
+  - Add Widgets Entities.
+  - Add Widgets Support into Project Base.
+
+
 1.10.17	|	Release date: **23.10.2023**
 ============================================
 * New Features and Improvements:
