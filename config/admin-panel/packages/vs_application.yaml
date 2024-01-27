@@ -4,6 +4,8 @@ vs_application_instalator:
             classes:
                 model: App\Entity\Application\InstalationInfo
 vs_application:
+    project_type: base_application
+    
     resources:
         application:
             classes:
@@ -53,6 +55,17 @@ vs_application:
          
     menu:
         mainSystemMenu:
+            dashboard:
+                name: vs_application.menu.dashboard
+                uri: "javascript:;"
+                attributes:
+                    iconClass: icon_genius
+                    breadcrumb_route: vs_application_dashboard
+                childs:
+                    locales:
+                        name: vs_application.menu.dashboard
+                        route: vs_application_dashboard
+            
             settings:
                 name: vs_application.menu.settings
                 uri: "javascript:;"
