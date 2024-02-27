@@ -1,3 +1,11 @@
+1.10.19	|	Release date: **27.02.2024**
+============================================
+* New Features and Improvements:
+  - Add Some Improvements.
+  - Update For Some New Features.
+  - Add New Resources for Vankosoft Library.
+
+
 1.10.18	|	Release date: **22.01.2024**
 ============================================
 * New Features and Improvements:
