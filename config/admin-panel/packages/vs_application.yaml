@@ -4,6 +4,8 @@ vs_application_instalator:
             classes:
                 model: App\Entity\Application\InstalationInfo
 vs_application:
+    project_type: base_application
+    
     resources:
         application:
             classes:
@@ -47,12 +49,23 @@ vs_application:
         widget:
             classes:
                 model: App\Entity\Application\Widget
-        widget_config:
+        widgets_registry:
             classes:
-                model: App\Entity\Application\WidgetConfig
+                model: App\Entity\Application\WidgetsRegistry
          
     menu:
         mainSystemMenu:
+            dashboard:
+                name: vs_application.menu.dashboard
+                uri: "javascript:;"
+                attributes:
+                    iconClass: icon_genius
+                    breadcrumb_route: vs_application_dashboard
+                childs:
+                    locales:
+                        name: vs_application.menu.dashboard
+                        route: vs_application_dashboard
+            
             settings:
                 name: vs_application.menu.settings
                 uri: "javascript:;"
@@ -135,8 +148,8 @@ vs_application:
                         routeParameters:
                           id: int
                         display: false
-                    widget_configs:
-                        name: vs_application.menu.widget_configs
+                    widgets_registry:
+                        name: vs_application.menu.widgets_registry
                         route: vs_application_widget_ext_index
             taxonomy:
                 name: vs_application.menu.taxonomy
@@ -260,6 +273,53 @@ vs_application:
                         routeParameters:
                           id: int
                         display: false
+                        
+            website_elements:
+                name: vs_application.menu.website_elements
+                uri: "javascript:;"
+                attributes:
+                    iconClass: icon_genius
+                childs:
+                    faq_list:
+                        name: vs_application.menu.frequently_asked_questions
+                        route: vs_cms_helpcenter_question_index
+                    faq_create:
+                        name: vs_application.menu.create_question
+                        route: vs_cms_helpcenter_question_create
+                        display: true
+                    faq_update:
+                        name: vs_application.menu.update_question
+                        route: vs_cms_helpcenter_question_update
+                        routeParameters:
+                          id: int
+                        display: false
+                    quick_links_list:
+                        name: vs_application.menu.quick_links_list
+                        route: vs_cms_quick_link_index
+                    quick_links_create:
+                        name: vs_application.menu.quick_links_create
+                        route: vs_cms_quick_link_create
+                        display: true
+                    quick_links_update:
+                        name: vs_application.menu.quick_links_update
+                        route: vs_cms_quick_link_update
+                        routeParameters:
+                          id: int
+                        display: false
+                    sliders_list:
+                        name: vs_application.menu.sliders_list
+                        route: vs_cms_slider_index
+                    sliders_create:
+                        name: vs_application.menu.sliders_create
+                        route: vs_cms_slider_create
+                        display: true
+                    sliders_update:
+                        name: vs_application.menu.sliders_update
+                        route: vs_cms_slider_update
+                        routeParameters:
+                          id: int
+                        display: false
+            
             filemanager_vankosoft:
                 name: vs_application.menu.vankoSoft_file_manager
                 uri: "javascript:;"
