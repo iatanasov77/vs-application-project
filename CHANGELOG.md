@@ -1,3 +1,9 @@
+1.10.20	|	Release date: **29.02.2024**
+============================================
+* New Features:
+  - Replace using Annotations with Using Attributes.
+
+
 1.10.19	|	Release date: **27.02.2024**
 ============================================
 * New Features and Improvements:
