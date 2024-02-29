@@ -8,6 +8,7 @@ framework:
     # https://symfony.com/doc/current/reference/configuration/framework.html#configuration-framework-http_method_override
     http_method_override: true
 
+    handle_all_throwables: true
     php_errors:
         log: true
 
@@ -17,9 +18,12 @@ framework:
     # https://symfony.com/doc/current/reference/configuration/framework.html#session
     #########################################################################################################
     session:
-        save_path: '%vs_application.session_save_path%'
-        handler_id: session.handler.native_file
+        handler_id: null
+        # OLD CONFIG
+        #handler_id: session.handler.native_file
+
         storage_factory_id: session.storage.factory.native
+        save_path: '%vs_application.session_save_path%'
         
         cookie_domain: '%vs_users.cookie.domain%'
         cookie_secure: auto
