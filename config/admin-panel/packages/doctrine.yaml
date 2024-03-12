@@ -24,7 +24,7 @@ doctrine:
     orm:
         auto_generate_proxy_classes: true
         
-         # Enables the new implementation of proxies based on lazy ghosts instead of using the legacy implementation
+        # Enables the new implementation of proxies based on lazy ghosts instead of using the legacy implementation
         #enable_lazy_ghost_objects: false
         
         enable_lazy_ghost_objects: true

@@ -3,6 +3,7 @@ vs_application_instalator:
         instalation_info:
             classes:
                 model: App\Entity\Application\InstalationInfo
+
 vs_application:
     project_type: base_application
     
