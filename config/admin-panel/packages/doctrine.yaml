@@ -24,7 +24,7 @@ doctrine:
     orm:
         auto_generate_proxy_classes: true
         
-         # Enables the new implementation of proxies based on lazy ghosts instead of using the legacy implementation
+        # Enables the new implementation of proxies based on lazy ghosts instead of using the legacy implementation
         #enable_lazy_ghost_objects: false
         
         enable_lazy_ghost_objects: true
@@ -50,6 +50,7 @@ doctrine:
                 dir: "%kernel.project_dir%/vendor/gedmo/doctrine-extensions/src/Tree/Entity"
                 alias: GedmoTree # (optional) it will default to the name set for the mapping
                 is_bundle: false
+                
             translatable:
                 #type: annotation
                 type: attribute
@@ -57,6 +58,7 @@ doctrine:
                 dir: "%kernel.project_dir%/vendor/gedmo/doctrine-extensions/src/Translatable/Entity/MappedSuperclass"
                 alias: GedmoTranslatable
                 is_bundle: false
+                
             loggable:
                 #type: annotation
                 type: attribute
@@ -64,6 +66,7 @@ doctrine:
                 dir: "%kernel.project_dir%/vendor/gedmo/doctrine-extensions/src/Loggable/Entity"
                 alias: GedmoLoggable
                 is_bundle: false
+                
             sortable:
                 #type: annotation
                 type: attribute
