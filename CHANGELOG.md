@@ -1,3 +1,10 @@
+1.10.23	|	Release date: **19.06.2024**
+============================================
+* New Features:
+  - Remove Vankosoft API ENV Variables.
+  - Update Readme File.
+
+
 1.10.22	|	Release date: **19.06.2024**
 ============================================
 * Bug-Fixes:
