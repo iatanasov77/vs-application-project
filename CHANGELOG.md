@@ -1,3 +1,11 @@
+1.10.22	|	Release date: **19.06.2024**
+============================================
+* Bug-Fixes:
+  - Update AdminPanel Configs.
+  - Update Doctrine Extensions Config.
+  - Remove Unneeded Configs.
+
+
 1.10.21	|	Release date: **11.05.2024**
 ============================================
 * New Features:
