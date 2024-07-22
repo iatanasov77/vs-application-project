@@ -1,3 +1,9 @@
+1.10.24	|	Release date: **22.07.2024**
+============================================
+* Bug-Fixes and Improvements:
+  - Iprove LIIP Imagine Config.
+
+
 1.10.23	|	Release date: **19.06.2024**
 ============================================
 * New Features:
