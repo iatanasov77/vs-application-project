@@ -68,7 +68,7 @@ vs_application:
                 name: vs_application.menu.dashboard
                 uri: "javascript:;"
                 attributes:
-                    iconClass: icon_genius
+                    iconClass: ri-dashboard-2-line
                     breadcrumb_route: vs_application_dashboard
                 childs:
                     locales:
@@ -79,7 +79,7 @@ vs_application:
                 name: vs_application.menu.settings
                 uri: "javascript:;"
                 attributes:
-                    iconClass: icon_genius
+                    iconClass: ri-settings-5-line
                     breadcrumb_route: vs_application_settings_index
                 childs:
                     locales:
@@ -124,11 +124,12 @@ vs_application:
                     settings:
                         name: vs_application.menu.preferences
                         route: vs_application_settings_index
+            
             widgets:
                 name: vs_application.menu.widgets
                 uri: "javascript:;"
                 attributes:
-                    iconClass: icon_genius
+                    iconClass: ri-honour-line
                     breadcrumb_route: vs_application_widget_ext_index
                 childs:
                     list_widget_groups:
@@ -160,11 +161,12 @@ vs_application:
                     widgets_registry:
                         name: vs_application.menu.widgets_registry
                         route: vs_application_widget_ext_index
+            
             taxonomy:
                 name: vs_application.menu.taxonomy
                 uri: "javascript:;"
                 attributes:
-                    iconClass: icon_genius
+                    iconClass: ri-file-list-3-line
                     breadcrumb_route: vs_application_taxonomy_index
                 childs:
                     list:
@@ -184,7 +186,7 @@ vs_application:
                 name: vs_application.menu.user_management
                 uri: "javascript:;"
                 attributes:
-                    iconClass: icon_genius
+                    iconClass: ri-account-circle-line
                     breadcrumb_route: vs_users_users_index
                 childs:
                     users_list:
@@ -213,12 +215,29 @@ vs_application:
                           id: int
                         display: false
                         
+            #########################################################################
+            # Uncomment this section If You need to Use VankoSoft Issue Tracker
+            #########################################################################
+#             project_issues:
+#                 name: vs_application.menu.project_issues
+#                 uri: "javascript:;"
+#                 attributes:
+#                     iconClass: ri-rocket-line
+#                     breadcrumb_route: vs_application_project_issues_index
+#                 childs:
+#                     list_issues:
+#                         name: vs_application.menu.project_issues
+#                         route: vs_application_project_issues_index
+#                     create_issues:
+#                         name: vs_application.menu.create_issue
+#                         route: vs_application_project_issues_create
+                        
         mainCmsMenu:
             cms:
                 name: vs_application.menu.static_pages
                 uri: "javascript:;"
                 attributes:
-                    iconClass: icon_genius
+                    iconClass: ri-pages-line
                     breadcrumb_route: vs_cms_pages_index
                 childs:
                     list:
@@ -253,7 +272,7 @@ vs_application:
                 name: vs_application.menu.table_of_contents
                 uri: "javascript:;"
                 attributes:
-                    iconClass: icon_genius
+                    iconClass: ri-stack-line
                     breadcrumb_route: vs_cms_document_index
                 childs:
                     list:
@@ -287,7 +306,7 @@ vs_application:
                 name: vs_application.menu.website_elements
                 uri: "javascript:;"
                 attributes:
-                    iconClass: icon_genius
+                    iconClass: ri-pencil-ruler-2-line
                 childs:
                     faq_list:
                         name: vs_application.menu.frequently_asked_questions
@@ -333,7 +352,7 @@ vs_application:
                 name: vs_application.menu.vankoSoft_file_manager
                 uri: "javascript:;"
                 attributes:
-                    iconClass: icon_genius
+                    iconClass: ri-stack-line
                     breadcrumb_route: vs_cms_file_manager_index
                 childs:
                     list_filemanagers:
@@ -355,7 +374,7 @@ vs_application:
                 name: vs_application.menu.artgris_file_manager
                 uri: "javascript:;"
                 attributes:
-                    iconClass: icon_genius
+                    iconClass: ri-stack-line
                     breadcrumb_route: vs_cms_filemanager_artgris_list
                 childs:
                     browse:
@@ -365,23 +384,6 @@ vs_application:
                     upload:
                         name: vs_application.menu.upload_a_file
                         route: vs_cms_filemanager_artgris_upload
-                      
-            #########################################################################
-            # Uncomment this section If You need to Use VankoSoft Issue Tracker
-            #########################################################################
-#             project_issues:
-#                 name: vs_application.menu.project_issues
-#                 uri: "javascript:;"
-#                 attributes:
-#                     iconClass: pie-chart
-#                     breadcrumb_route: vs_application_project_issues_index
-#                 childs:
-#                     list_issues:
-#                         name: vs_application.menu.project_issues
-#                         route: vs_application_project_issues_index
-#                     create_issues:
-#                         name: vs_application.menu.create_issue
-#                         route: vs_application_project_issues_create
         
         profileMenu:
             contact:
