@@ -1,3 +1,13 @@
+1.10.25	|	Release date: **08.11.2024**
+============================================
+* New Features and Improvements:
+  - Add AdminPanel Velzon Theme.
+  - Move VankoSoft API Credentials into ENV Variables.
+  - Optimize AdminPanel Configs.
+  - Remove 'bootstrap-sass' Frontend Package.
+  - Update All AdminPanel configs about Sylius Resource Bundle 1.12.
+
+
 1.10.24	|	Release date: **22.07.2024**
 ============================================
 * Bug-Fixes and Improvements:
