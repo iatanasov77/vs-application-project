@@ -1,3 +1,12 @@
+1.10.26	|	Release date: **09.11.2024**
+============================================
+* New Features:
+  - Update Symfony WebPack Encore Frontend Package Version.
+* Bug-Fixes and Improvements:
+  - Fix Taxon Entity.
+  - Copy Default Theme Assets in Admin Panel Velzon Theme WebPack Config.
+
+
 1.10.25	|	Release date: **08.11.2024**
 ============================================
 * New Features and Improvements:
