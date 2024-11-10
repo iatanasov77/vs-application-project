@@ -1,3 +1,9 @@
+1.11.0	|	Release date: **10.11.2024**
+============================================
+* New Features:
+  - Update VankosoftApplicationLibrary Version.
+
+
 1.10.26	|	Release date: **09.11.2024**
 ============================================
 * New Features:
