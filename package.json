@@ -47,7 +47,8 @@
         "feather-icons": "^4.29",
         "node-waves": "^0.7",
         "simplebar": "^6.2",
-        "choices.js": "^10.2"
+        "choices.js": "^10.2",
+        "ad-rotator": "^5.8"
     },
     "devDependencies": {
         "@hotwired/stimulus": "^3.0.0",
