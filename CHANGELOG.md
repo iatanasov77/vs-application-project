@@ -1,3 +1,14 @@
+1.11.1	|	Release date: **21.12.2024**
+============================================
+* New Features:
+  - Add AdminPanel Velzon Theme into Webpack Build Config.
+  - Add New Resources From VankoSoft Library.
+  - Update AdminPanel Configs.
+  - Add a New Frontend packages Dependency.
+  - Load CkEditor5 Bundle Into AdminPanel Application.
+  - Update Vankosoft Themes Version Requirement.
+
+
 1.11.0	|	Release date: **10.11.2024**
 ============================================
 * New Features:
