@@ -9,6 +9,14 @@ const adminPanelConfig  = require( themePath + '/webpack.config' );
 //=================================================================================================
 
 /**
+ *  AdminPanel Velzon Theme
+ */
+Encore.reset();
+const adminPanelVelzonConfig    = require( './themes/AdminPanel_VelzonChild/webpack.config' );
+
+//=================================================================================================
+
+/**
  *  Application Theme 1
  */
 Encore.reset();
@@ -27,6 +35,7 @@ const applicationTheme2Config   = require('./themes/ApplicationSimpleTheme/webpa
 
 module.exports = [
     adminPanelConfig,
+    adminPanelVelzonConfig,
     applicationTheme1Config,
     applicationTheme2Config
 ];
