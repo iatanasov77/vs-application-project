@@ -1,3 +1,10 @@
+1.12.0	|	Release date: **01.01.2025**
+============================================
+* New Features:
+  - Ipmrove Deployment Scripts.
+  - Update to VankoSoft Application Library 1.12
+
+
 1.11.1	|	Release date: **21.12.2024**
 ============================================
 * New Features:
