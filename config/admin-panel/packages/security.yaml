@@ -109,4 +109,3 @@ security:
         - { path: ^/users/user-roles/, roles: [ROLE_SUPER_ADMIN], requires_channel: '%env(SECURE_SCHEME)%' }
         - { path: ^/users/, roles: [ROLE_SUPER_ADMIN,ROLE_ADMIN], requires_channel: '%env(SECURE_SCHEME)%' }
         - { path: ^/, roles: [ROLE_SUPER_ADMIN,ROLE_ADMIN,ROLE_APPLICATION_ADMIN], requires_channel: '%env(SECURE_SCHEME)%' }
-
