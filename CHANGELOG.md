@@ -1,3 +1,14 @@
+1.12.1	|	Release date: **16.01.2025**
+============================================
+* New Features and Improvements:
+  - Update FOS JS Routes JSON's
+  - Add an ENV Variable for Which Version of CkEditor to Use.
+  - Add About Link into Profile Menu.
+  - Update AdminPanel VelzonChild Webpack Config.
+  - Update AdminPanel Menu Config.
+  - Improve Jenkinsfile.
+
+
 1.12.0	|	Release date: **01.01.2025**
 ============================================
 * New Features:
