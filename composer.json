@@ -27,7 +27,7 @@
         "symfony/runtime": "6.4.*",
         
         "vankosoft/application": "1.12.*",
-        "vankosoft/application-themes": "^1.2"
+        "vankosoft/application-themes": "^1.4"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.5",
