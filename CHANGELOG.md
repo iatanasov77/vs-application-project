@@ -1,3 +1,22 @@
+1.12.2	|	Release date: **03.05.2025**
+============================================
+* New Features:
+  - Add a Kanbanboard Page into Project AdminPanel.
+  - Update and Fix Frontend Dependencies for Stimulus Framework.
+  - Improve Jenkinsfile .
+  - Change VankoSoft API Scheme to https in ENV Files.
+  - Create a 'staging' ENV.
+  - Remove KNP Gaufrette Loading and Configs.
+  - Add Twig Global useCkEditor set from ENV to Use in JS and Twig Templates when needed.
+  - Add Symfony Lock Config.
+  - Remove Uneeded Services.
+  - Add a Custom Logic into JS for Admin Velzon Theme Profile Page.
+  - Some Updates.
+  - Improve Aliases in 'AdminPanel_VelzonChild' theme webpack.config.js
+  - Add Vankosoft API Task Attachment FTP Filessystem.
+  - Configure Chunks path for Chunked Uploads.
+
+
 1.12.1	|	Release date: **16.01.2025**
 ============================================
 * New Features and Improvements:
