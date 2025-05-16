@@ -1,3 +1,12 @@
+1.12.3	|	Release date: **16.05.2025**
+============================================
+* New Features:
+  - Remove Issue Tracking Routes.
+  - Remove Vankosoft Issue Tracking Configs.
+  - Update Webpack Config of AdminPanel Velzon Theme about New Versions of Vankosoft Core Library and Extensions.
+  - Fix Some Deprecations in AdminPanel Configs.
+
+
 1.12.2	|	Release date: **03.05.2025**
 ============================================
 * New Features:
