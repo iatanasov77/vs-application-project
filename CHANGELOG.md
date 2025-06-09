@@ -1,3 +1,11 @@
+1.13.0	|	Release date: **09.06.2025**
+============================================
+* New Features:
+  - Some Config Improvements.
+  - Update Some Composer Requirements Versions.
+  - Update to Vankosoft Core 1.13
+
+
 1.12.3	|	Release date: **16.05.2025**
 ============================================
 * New Features:
