@@ -1,3 +1,11 @@
+1.13.2	|	Release date: **19.01.2026**
+============================================
+* New Features:
+  - Update to Symfony 7.
+* Bug-Fixes:
+  - Fix AdminPanel VelzonChild Webpack Aliases.
+
+
 1.13.1	|	Release date: **04.09.2025**
 ============================================
 * New Features:
