@@ -1,3 +1,9 @@
+1.14.1	|	Release date: **25.02.2026**
+============================================
+* New Features:
+  - Add Template for Maintence Page.
+
+
 1.14.0	|	Release date: **05.02.2026**
 ============================================
 * New Features:
