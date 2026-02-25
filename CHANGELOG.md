@@ -1,3 +1,9 @@
+1.14.2	|	Release date: **25.02.2026**
+============================================
+* Bug-Fixes:
+  - Fix Doctrine Migrations Config.
+
+
 1.14.1	|	Release date: **25.02.2026**
 ============================================
 * New Features:
