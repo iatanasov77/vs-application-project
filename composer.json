@@ -51,6 +51,9 @@
             "symfony/flex": true,
             "oomphinc/composer-installers-extender": true,
             "symfony/runtime": true
+        },
+        "audit": {
+            "block-insecure": false
         }
     },
     "autoload": {
