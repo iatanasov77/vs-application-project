@@ -385,6 +385,18 @@ vs_application:
                         name: vs_application.menu.upload_a_file
                         route: vs_cms_filemanager_artgris_upload
         
+        mainAgentMenu:
+            agent:
+                name: vs_application.menu.agent_menu_title
+                uri: "javascript:;"
+                attributes:
+                    iconClass: "fa fa-user-secret"
+                    breadcrumb_route: vs_agent_actions_index
+                childs:
+                    list:
+                        name: vs_application.menu.list_agent_actions
+                        route: vs_agent_actions_index
+        
         profileMenu:
             about:
                 name: vs_application.menu.about
